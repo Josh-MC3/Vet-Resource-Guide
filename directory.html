@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resource Directory — Vet Transition Portal</title>
+<meta name="description" content="Search and filter every veteran and military spouse resource by cost, GI Bill eligibility, category, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark">V</span> Vet Transition Portal</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="compare.html">Compare</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="pathways.html">Pathways</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="directory">
+    <div class="wrap">
+      <p class="eyebrow">Resource directory</p>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Every resource, filterable.</h1>
+      <p class="muted" style="max-width:60ch;margin-bottom:26px">Verified profiles come first. Tap any resource for the full brief — eligibility, cost, ROI, and what nobody tells you.</p>
+
+      <div class="toolbar">
+        <div class="search-box">
+          <input type="search" id="search" placeholder="Search programs, e.g. cloud, PMP, spouse, fellowship…" aria-label="Search resources">
+        </div>
+        <div class="view-switch" role="tablist" aria-label="View">
+          <button data-view="card" class="active">Cards</button>
+          <button data-view="table">Table</button>
+        </div>
+      </div>
+
+      <div class="filters" id="filters" aria-label="Filters"></div>
+      <p class="result-meta" id="result-meta"></p>
+      <div id="results"></div>
+    </div>
+  </section>
+</main>
+
+<!-- detail modal -->
+<div class="modal-back" id="modal-back" role="dialog" aria-modal="true" aria-label="Resource detail">
+  <div class="modal">
+    <div class="modal-head" id="modal-head"></div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- compare bar -->
+<div class="compare-bar" id="compare-bar">
+  <div class="wrap">
+    <span class="lab">Compare</span>
+    <div class="slots"></div>
+    <a class="btn btn-primary" id="compare-go" href="#">Compare →</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="disclaimer">Independent reference tool. Confirm all eligibility and cost details with the official source before acting. Estimates are analytical judgments, not guarantees.</p>
+    <p class="mono">VET PORTAL · v1.0</p>
+  </div>
+</footer>
+
+<script src="data/organizations.js"></script>
+<script src="js/app.js"></script>
+<script>
+  // wire compare-bar "Compare →" to carry selected ids
+  document.getElementById("compare-go").addEventListener("click", function (e) {
+    e.preventDefault();
+    var slots = document.querySelectorAll("#compare-bar .slot");
+    // ids are tracked in app via VetPortal; rebuild from DOM labels is brittle,
+    // so we read from the live module through a small accessor:
+    var ids = (window.__cmpIds && window.__cmpIds()) || [];
+    location.href = "compare.html?ids=" + ids.join(",");
+  });
+</script>
+</body>
+</html>

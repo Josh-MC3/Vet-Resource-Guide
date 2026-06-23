@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vet Transition Portal — Veteran & Military Spouse Resource Center</title>
+<meta name="description" content="An investigative, one-stop resource portal for veterans, transitioning service members, and military spouses: education, employment, tech, trades, business, wellness, and benefits — with honest ROI and eligibility analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Vet Transition Portal",
+  "description":"Resource portal for veterans, transitioning service members, and military spouses.",
+  "potentialAction":{"@type":"SearchAction","target":"directory.html?q={search_term_string}","query-input":"required name=search_term_string"}
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark">V</span> Vet Transition Portal</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="compare.html">Compare</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="pathways.html">Pathways</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="coords">RESOURCE BRIEF · TRANSITION OPS · UPDATED JUN 2026</p>
+      <h1>Plan your <span class="amber">transition</span> like the operation it is.</h1>
+      <p class="lede">An investigative, no-spin directory of the programs that help service members, veterans, and military spouses build their next career — with honest eligibility, cost, and ROI analysis instead of marketing copy.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="directory.html">Open the directory →</a>
+        <a class="btn btn-ghost" href="pathways.html">See proven pathways</a>
+      </div>
+
+      <div class="statline">
+        <div class="stat"><div class="num" id="stat-total">—</div><div class="lab">Resources tracked</div></div>
+        <div class="stat"><div class="num" id="stat-verified">—</div><div class="lab">Fully verified profiles</div></div>
+        <div class="stat"><div class="num" id="stat-cats">—</div><div class="lab">Categories</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Browse by mission area</p>
+          <h2>Ten categories</h2>
+        </div>
+        <p>Every organization is filed under the areas it serves. Tap a card to jump into a filtered directory view.</p>
+      </div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">How this is different</p>
+          <h2>Built for decisions, not brochures</h2>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card" style="--cat:var(--amber);cursor:default">
+          <div class="bar"></div>
+          <h3>Verified vs. estimated</h3>
+          <p>Facts confirmed against .gov/.mil and official sources are labeled <strong>Verified</strong>. Analytical judgments (ROI, salary impact) are tagged <strong>Estimate</strong> — never disguised as fact.</p>
+        </div>
+        <div class="cat-card" style="--cat:var(--olive);cursor:default">
+          <div class="bar"></div>
+          <h3>"What nobody tells you"</h3>
+          <p>Each profile includes the unwritten expectations, common failure modes, and hidden catches — the things a recruiter's webpage leaves out.</p>
+        </div>
+        <div class="cat-card" style="--cat:var(--signal);cursor:default">
+          <div class="bar"></div>
+          <h3>Officer vs. enlisted fit</h3>
+          <p>Programs are assessed for who they actually serve best — junior enlisted through senior officer — so you don't waste a cohort seat.</p>
+        </div>
+        <div class="cat-card" style="--cat:var(--amber);cursor:default">
+          <div class="bar"></div>
+          <h3>Compare & rank</h3>
+          <p>Put programs side by side on cost, duration, barrier, and outcomes, or browse rankings by ROI, tech, transition, spouse, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="disclaimer">This is an independent reference tool, not affiliated with the DoD, VA, or any listed organization. Eligibility, costs, and program details change — always confirm with the official source before acting. Estimates are analytical judgments, not guarantees.</p>
+    <p class="mono">VET PORTAL · v1.0</p>
+  </div>
+</footer>
+
+<script src="data/organizations.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

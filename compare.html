@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare Programs — Vet Transition Portal</title>
+<meta name="description" content="Compare veteran transition programs side by side on cost, duration, entry barrier, and outcomes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark">V</span> Vet Transition Portal</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="compare.html" class="active">Compare</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="pathways.html">Pathways</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Comparison tool</p>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Programs, side by side.</h1>
+      <p class="muted" style="max-width:60ch;margin-bottom:22px">Select two to four verified programs to compare on cost, duration, entry barrier, and estimated outcomes.</p>
+      <div class="filters" id="compare-picker" aria-label="Select programs to compare"></div>
+      <div id="compare-out" style="margin-top:20px"></div>
+    </div>
+  </section>
+</main>
+
+<!-- detail modal (reused) -->
+<div class="modal-back" id="modal-back" role="dialog" aria-modal="true" aria-label="Resource detail">
+  <div class="modal">
+    <div class="modal-head" id="modal-head"></div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="disclaimer">Independent reference tool. Comparison rows marked Estimate are analytical judgments, not verified figures.</p>
+    <p class="mono">VET PORTAL · v1.0</p>
+  </div>
+</footer>
+
+<script src="data/organizations.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
