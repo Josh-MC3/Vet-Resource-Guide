@@ -245,11 +245,18 @@
       '<button class="x" aria-label="Close">×</button>';
     head.querySelector(".x").addEventListener("click", closeModal);
 
-    body.innerHTML = o.verified ? detailFull(o) : detailStub(o);
+    body.innerHTML = o.verified ? detailFull(o) : (o.crossref ? detailCrossref(o) : detailStub(o));
 
     // wire any compare buttons inside modal
     var cmpBtn = body.querySelector("[data-cmp]");
     if (cmpBtn) cmpBtn.addEventListener("click", function () { toggleCompare(o.id); closeModal(); });
+
+    // wire cross-reference "open target profile" button
+    var gotoBtn = body.querySelector("[data-goto]");
+    if (gotoBtn) gotoBtn.addEventListener("click", function () {
+      var t = ORGS.filter(function (x) { return x.id === gotoBtn.dataset.goto; })[0];
+      if (t) openModal(t);
+    });
 
     back.classList.add("open");
     document.body.style.overflow = "hidden";
@@ -376,6 +383,21 @@
     // compare CTA
     h += '<div class="detail-block" style="text-align:center"><button class="btn btn-ghost" data-cmp>＋ Add to comparison</button></div>';
 
+    return h;
+  }
+
+  function detailCrossref(o) {
+    var target = ORGS.filter(function (x) { return x.id === o.crossref; })[0];
+    var h = '<div class="stub-notice"><div class="big">See the full profile</div>' +
+      '<p>' + esc(o.name) + ' is documented in detail inside the verified ' +
+      (target ? esc(target.name) : "related") + ' profile — including eligibility, cost, and the analysis you came for.</p></div>';
+    h += '<div class="detail-block"><dl class="kv">';
+    h += kv("Category", (o.categories || []).map(catLabel).join(", "));
+    if (o.url) h += kv("Official site", '<a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.url) + ' ↗</a>');
+    h += '</dl></div>';
+    if (target) {
+      h += '<div class="detail-block" style="text-align:center"><button class="btn btn-primary" data-goto="' + esc(target.id) + '">Open the ' + esc(target.name) + ' profile →</button></div>';
+    }
     return h;
   }
 
