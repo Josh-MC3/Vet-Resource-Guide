@@ -1823,49 +1823,1439 @@ window.ORGS = [
 },
 
 /* ==========================================================================
+   FULLY VERIFIED ORGANIZATIONS (Batch 5 — 3: transition/employment + family)
+   ========================================================================== */
+
+{
+  id: "nextop",
+  name: "NextOp Veterans",
+  verified: true,
+  categories: ["trades", "transition"],
+  url: "https://nextopvets.org/",
+  tagline: "Free 1:1 placement for mid-enlisted vets into industry & trades.",
+  overview: "NextOp is a Houston-based nonprofit that recruits, trains, and places high-performing military leaders into industry careers — with a deliberate, unusual focus on the mid-enlisted ranks (E-3 to E-7). Free, all-veteran staff, one-on-one Employment Coordinators, and SkillBridge-integrated. Industries span energy, manufacturing, industrial construction/skilled trades, logistics, healthcare, cybersecurity, and aerospace/defense.",
+  mission: "Bridge the gap between transitioning enlisted talent and industry careers.",
+  founded: "2014 (Houston, TX).",
+  hq: "Houston, TX (expanding into North Texas, West Tennessee, North Alabama, and beyond).",
+  funding: "Nonprofit; grants and corporate/industry partnerships (free to veterans).",
+  audience: ["Mid-enlisted transitioning service members and veterans (focus E-3 to E-7)", "Broader enlisted community"],
+  geographic: "Concentrated in Texas and expanding regions; events and virtual hiring sessions nationwide.",
+  eligibility: "Transitioning service members and veterans without a dishonorable discharge. Free. (Built around the enlisted talent pool — less tailored to officers.)",
+  status: "active",
+  cost: { tags: ["free"], detail: "All services are free to military and veterans. SkillBridge internships occur in the last ~6 weeks to 3 months of service on the DoD's dime." },
+  programs: [{
+    name: "Employment Coordinator (1:1 placement) + SkillBridge",
+    description: "A veteran Employment Coordinator works one-on-one with you to translate your MOS, refine your resume, prep interviews, and connect directly to pre-screened employers — through job offer and beyond. NextOp also coordinates DoD SkillBridge internships and runs hiring events.",
+    serves: "Mid-enlisted (E-3 to E-7) transitioning into industry and skilled trades.",
+    apply: ["Register at nextopvets.org/veterans", "Get matched with a veteran Employment Coordinator", "Work through resume, interviews, and direct employer connections to an offer"],
+    timeline: "Places veterans in roughly under a month on average.",
+    capacity: "Open; has placed 2,600+ veterans since 2015."
+  }],
+  barrier: { level: "Low", reasons: "Free and personal. The main limiter is geography (strongest in TX and expansion regions) and the enlisted focus." },
+  outcomes: { note: "ESTIMATE / org-reported. ~80% retention and sub-one-month average placement per NextOp; 2,600+ placed since 2015." },
+  roi: { score: 7, salaryImpact: "Medium-High", timeReturn: "High", note: "ESTIMATE. High value for enlisted veterans entering energy/manufacturing/trades; placement is fast and free. Less relevant for officers." },
+  nobodyTells: [
+    "Its niche is genuinely mid-enlisted (E-3 to E-7) — officers and senior enlisted are better served elsewhere (e.g., RecruitMilitary's MBA Veterans/ExecuVets).",
+    "It partners with NCCER for trades credentials and the Navy submarine industrial base (BlueForge Alliance / ATDM, Lockheed Martin apprenticeships) — strong onramps to skilled-trade careers.",
+    "Coverage is strongest in Texas and a handful of expansion regions, so location affects how hands-on the help feels."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — squarely the target demographic.",
+    nco: "Strong — core focus (E-3 to E-7).",
+    senior_enlisted: "Good for E-7; thins out above that.",
+    junior_officer: "Limited — built around the enlisted pipeline.",
+    senior_officer: "Not the intended audience.",
+    note: "Deliberately focused on mid-enlisted (E-3 to E-7) — the demographic least served by officer/exec headhunters."
+  },
+  careers: ["Skilled Trades", "Energy", "Manufacturing", "Industrial Construction", "Logistics", "Aerospace/Defense"],
+  pathways: ["Mid-enlisted veteran → NextOp coordinator + NCCER/ATDM credentialing → SkillBridge internship → industry placement"],
+  community: {
+    praise: ["Free, all-veteran staff", "Fast placement", "Real trades/industry pipelines (NCCER, submarine base)"],
+    complaints: ["Enlisted-focused (not officers)", "Geographically concentrated", "Thin public job board"],
+    tips: ["Register early in your transition", "Lean on the SkillBridge track", "Ask about NCCER/ATDM credentialing"]
+  },
+  sources: ["nextopvets.org", "military.com", "marinecorpstimes.com"]
+},
+
+{
+  id: "recruit-military",
+  name: "RecruitMilitary",
+  verified: true,
+  categories: ["transition", "remote"],
+  url: "https://recruitmilitary.com/",
+  tagline: "World's largest veteran job board + 100+ hiring events a year.",
+  overview: "RecruitMilitary (founded 1998) is a subsidiary of Bradley-Morris, the largest military-focused recruiting firm in the U.S. Free for job seekers, it runs the largest veteran-only job board, 100+ in-person and virtual hiring events across 30+ cities a year, direct placement services, and the Search & Employ magazine. Sister brands MBA Veterans Network (top-75 MBA programs) and ExecuVets (executive track) make the group unusually strong for officers and degreed candidates.",
+  mission: "Connect veterans, transitioning service members, and spouses with civilian employers.",
+  founded: "1998 (RecruitMilitary); parent Bradley-Morris is the largest U.S. military-focused recruiter.",
+  hq: "Metro-Atlanta, GA.",
+  funding: "For-profit recruiting firm; employers pay, job seekers don't.",
+  audience: ["Veterans", "Transitioning service members", "Military spouses", "Officers & degreed candidates (via MBA Veterans / ExecuVets)"],
+  geographic: "Nationwide job board + events in 30+ cities; virtual fairs worldwide.",
+  eligibility: "Open and free to veterans, transitioning service members, and military spouses. (Officers are well served via the MBA Veterans and ExecuVets sister brands.)",
+  status: "active",
+  cost: { tags: ["free"], detail: "Free for job seekers — the job board, hiring events, and resources cost nothing. Employers pay for access and recruiting services." },
+  programs: [{
+    name: "Job board + hiring events + direct placement",
+    description: "Create a profile and resume on the largest veteran-only job board, attend in-person/virtual hiring events (100+/year across 30+ cities), and access transition resources, Search & Employ magazine, and direct placement help. The official Army SFL-TAP employment partner.",
+    serves: "All transitioning military, veterans, and spouses; degreed/officer talent via sister brands.",
+    apply: ["Create a free job-seeker profile at recruitmilitary.com", "Build/translate your resume and register for hiring events", "Connect with employers actively recruiting military talent"],
+    timeline: "Self-paced; events run year-round.",
+    capacity: "Serves 2M+ veterans and transitioning members; 60%+ of staff are veterans."
+  }],
+  barrier: { level: "Low", reasons: "Free, online, and open. The main effort is building a strong profile and showing up to events." },
+  outcomes: { note: "ESTIMATE / org-reported. The largest veteran job board and event producer; outcomes depend on your field, profile, and follow-through." },
+  roi: { score: 6, salaryImpact: "Variable", timeReturn: "High", note: "ESTIMATE. Free, broad reach; for officers/MBAs the MBA Veterans Network and ExecuVets tracks lift the ceiling considerably." },
+  nobodyTells: [
+    "For officers and degreed candidates, the real value is the sister brands — MBA Veterans Network (top-75 MBA programs) and ExecuVets (executive track) — not just the general job board.",
+    "It's the official Army SFL-TAP employment partner, so it overlaps with the transition resources you're already entitled to.",
+    "Employers pay for access, so expect recruiter outreach — treat events as networking, not just applications."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good — free job board and events.",
+    nco: "Good.",
+    senior_enlisted: "Good.",
+    junior_officer: "Strong — use MBA Veterans / ExecuVets tracks.",
+    senior_officer: "Strong — ExecuVets targets executive-track talent."
+  },
+  careers: ["Management", "Engineering", "Sales/Business Development", "Operations/Logistics", "Technical roles", "Executive track (ExecuVets)"],
+  pathways: ["Transitioning officer → RecruitMilitary profile + MBA Veterans/ExecuVets events → corporate/management placement"],
+  community: {
+    praise: ["Largest veteran job board", "Frequent hiring events", "Strong officer/MBA tracks"],
+    complaints: ["Recruiter-driven (employers pay)", "General board can feel broad", "Quality varies by field"],
+    tips: ["Officers: prioritize MBA Veterans / ExecuVets", "Treat events as networking", "Keep your profile sharp and current"]
+  },
+  sources: ["recruitmilitary.com", "prweb.com", "linkedin.com"]
+},
+
+{
+  id: "operation-homefront",
+  name: "Operation Homefront",
+  verified: true,
+  categories: ["financial", "health"],
+  url: "https://www.operationhomefront.org/",
+  tagline: "Emergency grants (not loans) + housing for military families.",
+  overview: "Operation Homefront is a national nonprofit that builds strong, stable military and veteran families through emergency financial assistance, transitional and permanent housing, and family-support programs. Aid is given as grants (not loans), paid directly to providers. Roughly 83–85% of its expenditures go directly to programs.",
+  mission: "Build strong, stable, secure military and veteran families by improving their financial, emotional, and social well-being.",
+  founded: "2002 (national nonprofit; HQ San Antonio, TX).",
+  hq: "San Antonio, TX.",
+  funding: "501(c)(3) nonprofit; donor- and corporate-funded (e.g., Dollar Tree since 2006).",
+  audience: ["Post-9/11 wounded/ill/injured service members & families", "Active-duty junior enlisted families (E-1 to E-6)", "Deployed service members", "Veterans within 10 years of separation (for Critical Financial Assistance)"],
+  geographic: "Nationwide; transitional housing villages in San Antonio TX, Gaithersburg MD, and San Diego CA.",
+  eligibility: "Critical Financial Assistance: post-9/11 service members who sustained a line-of-duty wound/illness/injury (honorable or general discharge, within 10 years of separation), OR active-duty E-1 to E-6 with DEERS-eligible dependents, OR deployed members. Lifetime number of assists is limited.",
+  status: "active",
+  cost: { tags: ["free"], detail: "Assistance is free, given as grants (not loans), and paid directly to service providers (or a grocery card). It does NOT cover credit-card/personal-loan payments or down payments — it targets past-due essential bills, home repairs, and similar critical needs." },
+  programs: [
+    {
+      name: "Critical Financial Assistance",
+      description: "Short-term grants for past-due essential bills, home repairs, and critical family needs; caseworkers validate need and pay providers directly.",
+      serves: "Eligible post-9/11 wounded/ill/injured, junior-enlisted (E-1 to E-6), and deployed families.",
+      apply: ["Review eligibility and create an account at My Operation Homefront", "Submit an application with documentation", "A caseworker contacts you (typically within 24–48 business hours)"],
+      timeline: "Caseworker outreach in ~24–48 business hours; assist counts are lifetime-limited.",
+      capacity: "Cannot assist everyone who applies; need-based."
+    },
+    {
+      name: "Housing programs",
+      description: "Permanent Homes for Veterans (mortgage-free homes, 730+ families since 2012), Transitional Apartments (rent/utilities-free for a year with employment/financial counseling), and Transitional Villages bridging the gap between end of military pay and start of VA benefits.",
+      serves: "Wounded/ill/injured warriors and veterans transitioning to stability.",
+      apply: ["Apply via the relevant program page on operationhomefront.org"],
+      timeline: "Program-dependent (e.g., transitional apartments ~1 year).",
+      capacity: "Limited; need-based."
+    }
+  ],
+  barrier: { level: "Medium", reasons: "Free, but eligibility is specific (post-9/11 wounded/ill/injured, junior enlisted, or deployed), documentation is required, and assists are lifetime-limited — it's emergency relief, not ongoing support." },
+  outcomes: { note: "ESTIMATE / org-reported. Highly rated by charity watchdogs; ~83–85% of spending goes to programs serving tens of thousands of families yearly." },
+  roi: { score: 6, salaryImpact: "N/A", timeReturn: "High", note: "ESTIMATE. Not a career resource — it's a financial safety net. Value is crisis-prevention (stopping eviction/utility loss), which is high when you qualify." },
+  nobodyTells: [
+    "It's grants, not loans — and paid straight to your landlord/utility/vendor, not to you.",
+    "Critical Financial Assistance is tightly scoped: post-9/11 wounded/ill/injured, junior enlisted (E-1 to E-6), or deployed — and won't cover credit cards, personal loans, or down payments.",
+    "The number of lifetime assists is limited, so it's a true emergency backstop, not recurring support."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — E-1 to E-6 with dependents are directly eligible for CFA.",
+    nco: "Eligible if E-6 or below, or if post-9/11 wounded/ill/injured.",
+    senior_enlisted: "Mainly via the wounded/ill/injured or deployed criteria.",
+    junior_officer: "Generally via the wounded/ill/injured or deployed criteria, not rank.",
+    senior_officer: "Generally via the wounded/ill/injured criteria; not an income-based program for officers.",
+    note: "Eligibility is keyed to circumstance (junior enlisted, deployed, or post-9/11 wounded/ill/injured), not just rank."
+  },
+  careers: ["N/A — financial and family stability, not employment"],
+  pathways: ["Family in crisis → Operation Homefront grant (bill/repair) → transitional housing if needed → stability while VA benefits start"],
+  community: {
+    praise: ["Grants not loans", "High program-spending ratio", "Housing + family programs beyond cash aid"],
+    complaints: ["Specific eligibility", "Lifetime assist limits", "Won't cover cards/loans/down payments"],
+    tips: ["Have documentation ready", "Use it for past-due essential bills", "Explore VFW Unmet Needs / SSVF / branch relief societies too"]
+  },
+  sources: ["operationhomefront.org", "prnewswire.com", "valoannetwork.com"]
+},
+
+/* ==========================================================================
+   FULLY VERIFIED ORGANIZATIONS (Batch 6 — 2: education/credentialing)
+   ========================================================================== */
+
+{
+  id: "act-now",
+  name: "ACT Now Education",
+  verified: true,
+  categories: ["education", "it"],
+  url: "https://actnoweducation.org/",
+  tagline: "Free IT/cyber certs, exam vouchers, and a cohort with job prep.",
+  overview: "ACT Now Education (ANE) is a nonprofit that provides the military community with free upskilling resources and certification pathways focused on IT and cybersecurity. Its flagship '3 CERT' cohort delivers instructor-led training toward three industry certifications with exam vouchers, plus resume help, mock interviews, and job-placement support. ANE also offers free Coursera and Splunk access and standalone exam vouchers.",
+  mission: "Inspire and empower the military community through education — upskilling and reskilling for civilian careers.",
+  founded: "Nonprofit (501(c)(3)) serving the military community; IT/cyber focus.",
+  hq: "U.S.-based nonprofit (virtual programs).",
+  funding: "Nonprofit; corporate/partner supported (e.g., CompTIA, Splunk, Coursera).",
+  audience: ["Transitioning service members", "Veterans", "Military spouses", "Reservists/Guard", "Military dependents"],
+  geographic: "Nationwide; programs are virtual (some in-person cohort options).",
+  eligibility: "Open to the military community (active duty, veterans, spouses, reservists/Guard, dependents). The 3 CERT cohort is competitive — applications are manually reviewed and seats are limited.",
+  status: "active",
+  cost: { tags: ["free"], detail: "100% free, including certification exam vouchers. ANE values the 3 CERT package around $12,000. Free Coursera access (7,000+ courses) and Splunk training are also offered. 'Free' doesn't mean easy — the cohort expects serious time and participation." },
+  programs: [
+    {
+      name: "3 CERT Cohort",
+      description: "~8 weeks of instructor-led virtual training toward three industry certifications (e.g., CompTIA Security+ or Splunk, Professional Scrum Master, and PMP or CompTIA Project+), with exam vouchers, resume writing, a tailored business suit, headshots, mock interviews, and job-placement assistance.",
+      serves: "Military-community members targeting IT, cybersecurity, and project-management roles.",
+      apply: ["Join the ACT Now military community group and apply during an open window", "Submit resume + proof of service (with sensitive info redacted)", "Manual review and cohort selection"],
+      timeline: "~8-week cohort; multiple cohorts per year.",
+      capacity: "Competitive; limited seats."
+    },
+    {
+      name: "CERT2SUCCESS + free course access",
+      description: "A shorter (~3-week) certification cohort variant, plus free access to Coursera (26 certifications, 7,000+ courses) and Splunk training/certifications.",
+      serves: "Self-paced learners and those wanting a faster single-cert track.",
+      apply: ["Register on the ANE site for course access or a CERT2SUCCESS cohort"],
+      timeline: "~3 weeks (CERT2SUCCESS) or self-paced (Coursera).",
+      capacity: "Open (course access); cohort seats limited."
+    }
+  ],
+  barrier: { level: "Low-Medium", reasons: "Free and open to join, but the flagship cohort is competitive (manual review) and demands real weekly commitment — it's positioned for serious candidates, not casual voucher-seekers." },
+  outcomes: { note: "ESTIMATE / org-reported. ANE reports 40,000+ resources and a high-value cohort; outcomes depend on completion and the local IT/cyber hiring market." },
+  roi: { score: 7, salaryImpact: "Medium-High", timeReturn: "High", note: "ESTIMATE. Strong value if you finish — three stacked certs plus exam vouchers and job prep at no cost is high-leverage for an IT/cyber pivot." },
+  nobodyTells: [
+    "The 3 CERT cohort is competitive and manually reviewed — it's not just a free voucher; they screen for committed candidates.",
+    "Even outside a cohort, the free Coursera (7,000+ courses) and Splunk access are underused perks.",
+    "Certs alone don't get hired — use the included resume help, mock interviews, and placement support, and build projects."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — free onramp to IT/cyber certs.",
+    nco: "Strong.",
+    senior_enlisted: "Strong for a hands-on tech pivot.",
+    junior_officer: "Good — PMP/Scrum tracks align with officer experience.",
+    senior_officer: "Good for PM/leadership-flavored certs (PMP)."
+  },
+  careers: ["Cybersecurity", "IT Support", "Project Management", "Cloud/Splunk roles"],
+  pathways: ["Service member → ACT Now 3 CERT (Sec+, Scrum, PMP) → IT/cyber/PM role"],
+  community: {
+    praise: ["Genuinely free incl. vouchers", "Three stacked certs + job prep", "Free Coursera/Splunk access"],
+    complaints: ["Competitive cohort selection", "Real time commitment", "IT/cyber entry market is crowded"],
+    tips: ["Apply during an open cohort window", "Use the Coursera access while you wait", "Pair certs with a portfolio project"]
+  },
+  sources: ["actnoweducation.org", "military.com", "guidestar.org"]
+},
+
+{
+  id: "trio-vub",
+  name: "Veterans Upward Bound (TRIO / VUB)",
+  verified: true,
+  categories: ["education"],
+  url: "https://www.ed.gov/grants-and-programs/grants-higher-education/federal-trio-programs/veterans-upward-bound-program",
+  tagline: "Free, federally funded college-prep & refresher courses for veterans.",
+  overview: "Veterans Upward Bound is a federal TRIO program (U.S. Department of Education) that provides free college-preparation services to help eligible veterans enter and succeed in postsecondary education. Run locally at 65+ host campuses, it offers academic refresher courses (math through pre-calculus, composition, science, foreign language), tutoring, college and financial-aid advising, and an individual education plan.",
+  mission: "Motivate and prepare veterans to enroll in and complete postsecondary education.",
+  founded: "1972 (created for Vietnam-era veterans; part of the federal TRIO programs).",
+  hq: "U.S. Department of Education, Office of Postsecondary Education (Federal TRIO Programs).",
+  funding: "Federal (U.S. Department of Education); delivered via grants to host colleges/universities.",
+  audience: ["Veterans who are low-income and/or potential first-generation college students"],
+  geographic: "65+ local projects at host campuses nationwide; serves ~8,500 veterans/year.",
+  eligibility: "Veterans with 180+ days active duty (or fewer if released for a service-connected disability; some Guard/Reserve criteria), other-than-dishonorable discharge, who are low-income AND/OR potential first-generation college students, and who demonstrate academic need. (Officers/degreed veterans typically won't meet the first-gen/low-income/academic-need gate.)",
+  status: "active",
+  cost: { tags: ["free"], detail: "Completely free to eligible veterans, including books and materials. It does not pay tuition — it's college-readiness support; you fund the actual degree separately (e.g., GI Bill)." },
+  programs: [{
+    name: "College-prep & refresher coursework",
+    description: "Individualized education plan plus academic instruction/refreshers (math through pre-calculus, composition/literature, lab science, foreign language, computer basics), tutoring, college-placement-test prep, admissions and financial-aid guidance, and workshops (time management, finances, resume).",
+    serves: "Veterans returning to or starting college who need academic preparation.",
+    apply: ["Find your nearest VUB project (host campus) and contact the office", "Complete an interview/needs assessment and placement test", "Enroll in tailored refresher courses (free)"],
+    timeline: "Self-paced/term-based; varies by individual readiness and host campus cycles.",
+    capacity: "Each project is funded to serve a set number of veterans (often ~120–130)."
+  }],
+  barrier: { level: "Low", reasons: "Free, but eligibility is need-based (low-income and/or first-generation, plus academic need) and availability depends on having a VUB host campus nearby." },
+  outcomes: { note: "VERIFIED program facts (federal TRIO). Success is measured by the share of participants who enroll in and complete postsecondary education; individual results vary." },
+  roi: { score: 6, salaryImpact: "Indirect", timeReturn: "High", note: "ESTIMATE. Not a credential itself — it's a free on-ramp that raises the odds of starting and finishing a degree for veterans who need academic prep." },
+  nobodyTells: [
+    "It's college-prep, not a degree or a tuition benefit — it gets you ready for school, then you use the GI Bill for the actual program.",
+    "Eligibility is need-based (low-income and/or potential first-generation college student, plus academic need), so it's aimed at veterans who face barriers to college — many officers won't qualify.",
+    "It's run locally at 65+ host campuses, so availability and exact offerings depend on having a project near you."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong if you're a first-gen/low-income veteran heading to college.",
+    nco: "Good for those needing academic refreshers before enrolling.",
+    senior_enlisted: "Useful for a college restart if you meet the need-based criteria.",
+    junior_officer: "Usually not eligible (degree/first-gen/income gate).",
+    senior_officer: "Not the target audience.",
+    note: "Need-based and college-readiness focused — best for first-generation or low-income veterans, not degreed officers."
+  },
+  careers: ["N/A — prepares veterans to enter degree/vocational programs"],
+  pathways: ["Veteran (needs academic prep) → Veterans Upward Bound refreshers → college enrollment → GI Bill-funded degree"],
+  community: {
+    praise: ["Completely free incl. materials", "Patient, individualized prep", "Helps with admissions and financial aid"],
+    complaints: ["Need-based eligibility excludes many", "Location-dependent", "Doesn't pay tuition"],
+    tips: ["Find your nearest host-campus project", "Use it to brush up before placement tests", "Pair it with GI Bill planning for the degree itself"]
+  },
+  sources: ["ed.gov", "owens.edu", "uta.edu"]
+},
+
+/* ==========================================================================
+   FULLY VERIFIED ORGANIZATIONS (Batch 2 — trades, transition, health)
+   ========================================================================== */
+
+{
+  id: "usmap",
+  name: "United Services Military Apprenticeship Program (USMAP)",
+  verified: true,
+  categories: ["trades", "education"],
+  url: "https://usmap.osd.mil/",
+  tagline: "Turn your military job into a DOL-registered apprenticeship — free, while you serve.",
+  overview: "USMAP is a formal Department of Defense program that lets active-duty Navy, Marine Corps, Coast Guard, and (via Full-Time Support/AGR) Army members document their on-the-job training and earn a nationally recognized U.S. Department of Labor Certificate of Completion of Apprenticeship — at no cost and without off-duty hours.",
+  mission: "To give service members civilian-recognized credentials equal to their civilian counterparts for the skills they already use on the job.",
+  founded: "1999 (Navy and Marine Corps programs, dating to 1977, formally merged; Coast Guard joined shortly after)",
+  hq: "Pensacola, FL (Center for Information Warfare Training / OSD)",
+  funding: "U.S. Department of Defense; DOL is the registering sponsor.",
+  audience: ["Active-duty service members", "Full-Time Support / AGR / TAR reservists on year-plus active orders"],
+  geographic: "Anywhere a service member is stationed; logging is done online via CAC.",
+  eligibility: "Active duty (or FTS/AGR/TAR) Navy, Marine Corps, Coast Guard, or Army; must have completed the schooling required for your military occupation; trade must match your rating/MOS. Retirees and most drilling reservists are not eligible.",
+  status: "active",
+  cost: { tags: ["free"], detail: "Completely free. No off-duty hours required — you log the work you already do. Keep your GI Bill; this doesn't touch it." },
+  programs: [{
+    name: "Registered Apprenticeship (time-based or competency-based)",
+    description: "Choose a DOL-registered trade tied to your occupation, then log hours (time-based) or demonstrate competencies (E-5 and above, competency-based). Each apprenticeship year equals 2,000 work hours plus 144 hours of related instruction, usually satisfied by your 'A' school / MOS training.",
+    serves: "Service members who want a portable civilian credential for skills they're already using.",
+    apply: ["Look up trades tied to your rating/MOS on the USMAP site", "Verify eligibility and pick a trade", "Enroll online and sign the apprenticeship agreement", "Log hours/competencies (minimum 12 months enrolled)", "Submit final report through your chain of command for the DOL certificate"],
+    timeline: "Minimum 12 months; total length depends on the trade's required hours.",
+    capacity: "Open enrollment; largest registered apprenticeship program in the U.S."
+  }],
+  barrier: { level: "Low", reasons: "Free and open, but it requires self-discipline: you must enroll, log consistently for at least a year, and route a final report up your chain. Deployments or a change of duties can stall a trade." },
+  outcomes: { note: "VERIFIED program facts (DoD/DOL). DOL reports ~91% of apprenticeship completers (across all programs) are still employed nine months later; USMAP itself yields a portable federal credential rather than a job placement." },
+  roi: { score: 7, salaryImpact: "Indirect", timeReturn: "High", note: "ESTIMATE. Near-zero cost and effort relative to the payoff of a portable DOL credential, especially for trades-adjacent ratings; value depends on the trade and on you actually finishing." },
+  nobodyTells: [
+    "It credentials the job you already do — you're not learning a new trade, you're documenting an existing one.",
+    "It's free and doesn't burn GI Bill or off-duty time, but nobody logs it for you; completion rates hinge on consistency.",
+    "Finish before you separate — once you're out, you generally can't complete it, and the certificate is far easier to bank while still in."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — start logging early in your first rating.",
+    nco: "Strong — competency-based path (E-5+) can be faster.",
+    senior_enlisted: "Good — bank credentials before retirement.",
+    junior_officer: "Generally not eligible (enlisted-focused).",
+    senior_officer: "Generally not eligible."
+  },
+  careers: ["Electrician", "Machinist", "Welder", "HVAC", "Environmental analyst", "Many trades tied to ~100+ registered occupations"],
+  pathways: ["Sailor/Marine → USMAP apprenticeship in-rating → DOL Certificate of Completion → civilian journeyworker / union credit"],
+  community: {
+    praise: ["Genuinely free and off-duty-hour-free", "Nationally portable DOL credential", "Often earns promotion points"],
+    complaints: ["Easy to start and never finish", "Deployments/job changes can interrupt logging", "Not open to retirees or most reservists"],
+    tips: ["Enroll the moment you finish your rating school", "Set a monthly logging reminder", "Pick a trade that maps to your civilian goal, not just your current billet"]
+  },
+  sources: ["usmap.osd.mil", "apprenticeship.gov", "dol.gov"]
+},
+
+{
+  id: "troops-into-transportation",
+  name: "Troops Into Transportation",
+  verified: true,
+  categories: ["trades", "transition"],
+  url: "https://cdlschool.com/troops-into-transportation",
+  tagline: "Earn a Class A CDL in about 30 days, with carrier job placement.",
+  overview: "Run by The CDL School (a TransForce company), Troops Into Transportation is a DoD SkillBridge-approved CDL training-to-job program for transitioning service members, veterans, and their spouses, with a presence on 10+ military bases and a job-first model that connects graduates to carrier partners.",
+  mission: "To launch service members, veterans, and spouses into professional driving and logistics careers.",
+  founded: "2012",
+  hq: "Operated by The CDL School / TransForce (multiple U.S. training locations)",
+  funding: "Private (CDL school); accepts GI Bill and VR&E; some carrier and scholarship funding (e.g., Indeed's Drive for 500).",
+  audience: ["Transitioning service members", "Veterans", "Military spouses", "Dependents", "Active duty (SkillBridge)"],
+  geographic: "10+ military bases and training sites nationwide.",
+  eligibility: "Service members, veterans, and spouses; must meet CDL age/medical/licensing requirements (DOT physical, drug test). Honorable or general-under-honorable discharge for benefit funding.",
+  status: "active",
+  cost: { tags: ["gi-bill", "free", "self-pay"], detail: "GI Bill (Ch. 33) and VR&E (Ch. 31) accepted; some carriers reimburse VA-funded training; scholarships occasionally cover the full cost. Otherwise self-pay." },
+  programs: [{
+    name: "Class A CDL Training + Job Placement",
+    description: "Roughly 30-day Class A CDL course with hands-on manual-transmission training, pre-trip and road practice, then placement with carrier partners. Available as a SkillBridge program for active-duty members on terminal leave.",
+    serves: "Career-changers wanting a fast, in-demand credential with near-term employment.",
+    apply: ["Apply online or via a base SkillBridge office", "Confirm funding (GI Bill, VR&E, scholarship, or self-pay)", "Complete the ~30-day course and CDL exam", "Get matched to a carrier partner"],
+    timeline: "~30 days to CDL; lifetime job-placement support advertised.",
+    capacity: "2,500+ trainees per year."
+  }],
+  barrier: { level: "Low-Medium", reasons: "Short and accessible, but trucking is a lifestyle: long-haul over-the-road work means time away from home, and DOT medical/background standards screen some applicants out." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Program reports 2,500+ trainees/year and 11,000+ veterans and spouses placed; advertised graduate pay around $60K/year and up to ~$1,400/week."
+  },
+  roi: { score: 7, salaryImpact: "Medium-High", timeReturn: "High", note: "ESTIMATE. Among the fastest credential-to-paycheck paths; ROI is strongest if GI Bill/scholarship covers cost and you're open to OTR driving." },
+  nobodyTells: [
+    "Done as SkillBridge during terminal leave, you can train on military pay and keep your GI Bill for something else.",
+    "Starting pay is solid but the first year is often over-the-road — home time improves once you have experience.",
+    "Some carriers reimburse the cost if you used VA benefits, so ask before you self-pay."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — fast onramp to a stable paycheck.",
+    nco: "Strong — leadership can route toward dispatch/fleet roles later.",
+    senior_enlisted: "Good — driving now, logistics management later.",
+    junior_officer: "Mixed — consider logistics/ops management instead of driving.",
+    senior_officer: "Usually over-leveled for entry driving roles."
+  },
+  careers: ["CDL Class A Driver", "Owner-Operator", "Dispatcher", "Logistics/Fleet Operations"],
+  pathways: ["Service member (SkillBridge) → 30-day CDL → carrier partner OTR role → regional/local or logistics management"],
+  community: {
+    praise: ["Fast, hands-on training", "Real job placement", "GI Bill/VR&E accepted; scholarships available"],
+    complaints: ["OTR time away from home", "Quality varies by training site", "Trucking lifestyle isn't for everyone"],
+    tips: ["Use SkillBridge to train on military pay", "Ask carriers about tuition reimbursement", "Train on manual transmission to keep job options open"]
+  },
+  sources: ["cdlschool.com", "transforce.com", "fmcsa.dot.gov"]
+},
+
+{
+  id: "umap",
+  name: "Utility Workers Military Assistance Program (UMAP)",
+  verified: true,
+  categories: ["trades"],
+  url: "https://uwua.net/programs/utility-workers-military-assistance-program/",
+  tagline: "A 6–7 month training-to-job pipeline into the gas/electric utility sector.",
+  overview: "UMAP is a training-to-placement program from the Utility Workers Union of America (UWUA) and its Power for America (P4A) trust fund that prepares veterans for in-demand gas, electric, water, and renewable-energy utility jobs, with wraparound support and direct placement with employer partners like Peoples Gas and Consumers Energy.",
+  mission: "To translate veterans' military skills into family-sustaining careers in the utility industry.",
+  founded: "2012 (launched in Chicago)",
+  hq: "Chicago, IL (UWUA / Power for America)",
+  funding: "UWUA and Power for America trust fund; DOL and allied grants fund supportive services; public-private partnership.",
+  audience: ["Honorably discharged post-9/11 veterans", "Reservists", "National Guard", "Active-duty via SkillBridge"],
+  geographic: "Classroom training in Chicago (via City Colleges / Dawson Technical College); applicants come from across the country; employer partners in several states.",
+  eligibility: "Honorably discharged post-9/11 veterans, reservists, and Guard members; SkillBridge available for active duty. Class size limited (~25 per cohort).",
+  status: "active",
+  cost: { tags: ["free"], detail: "No cost to the veteran. Grants fund supportive services (bus passes, books, computers, childcare help, mentorship)." },
+  programs: [{
+    name: "UMAP Training-to-Placement Pipeline",
+    description: "An intensive 6–7 month, for-credit program (taught through City Colleges of Chicago / Dawson Technical College) including a paid internship and mentorship with journey-level utility workers, plus veteran peer support and mental-health resources.",
+    serves: "Veterans seeking a hands-on, unionized utility career with a job waiting at the end.",
+    apply: ["Apply via the Power for America / UMAP website", "Union helps coordinate attendance and support services", "Complete the cohort and internship", "Placement with a UMAP employer partner"],
+    timeline: "~6–7 months including a one-month paid internship.",
+    capacity: "~25 per cohort; 700+ graduates to date."
+  }],
+  barrier: { level: "Low-Medium", reasons: "Free with near-100% placement, but seats are limited (~25/cohort) and classroom training is based in Chicago, so you generally relocate there for the program." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Org reports 700–750+ graduates since 2011–2012, ~93% retention, ~96% graduation, and near-100% job placement with employer partners."
+  },
+  roi: { score: 8, salaryImpact: "High", timeReturn: "High", note: "ESTIMATE. Free training plus a near-guaranteed union utility job with strong wages and benefits is an excellent return; the catch is relocating to Chicago for the cohort." },
+  nobodyTells: [
+    "The selling point isn't the class — it's that an employer job is waiting at the end (near-100% placement).",
+    "Classroom training is Chicago-based, so plan to relocate for the cohort even though grads come from everywhere.",
+    "Active-duty members can do it via SkillBridge and start before they fully separate."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — entry into a unionized career with benefits.",
+    nco: "Strong — utility crews value military leadership.",
+    senior_enlisted: "Good — hands-on career or a path toward supervision.",
+    junior_officer: "Mixed — consider whether you want a field utility role.",
+    senior_officer: "Usually over-leveled for entry utility roles."
+  },
+  careers: ["Gas Utility Worker", "Electric/Line Worker", "Water Utility Technician", "Renewable Energy Technician"],
+  pathways: ["Post-9/11 veteran → UMAP cohort + paid internship → Peoples Gas / Consumers Energy (or partner) → unionized utility career"],
+  community: {
+    praise: ["Near-100% job placement", "Strong wraparound + veteran peer support", "Free, with benefits-rich union jobs"],
+    complaints: ["Small cohorts (~25)", "Chicago-based training requires relocation", "Competitive entry"],
+    tips: ["Apply early — seats are scarce", "Ask about SkillBridge if still active duty", "Use the wraparound services (housing, childcare, mentorship)"]
+  },
+  sources: ["uwua.net", "power4america.org", "military.com"]
+},
+
+{
+  id: "union-apprenticeships",
+  name: "Helmets to Hardhats",
+  verified: true,
+  categories: ["trades"],
+  url: "https://helmetstohardhats.org/",
+  tagline: "The front door to registered, earn-while-you-learn building-trades apprenticeships.",
+  overview: "Helmets to Hardhats (H2H) is a national nonprofit that connects transitioning service members, veterans, Guard, and Reservists with registered apprenticeships across North America's Building Trades Unions — paid, no-experience-needed training programs in construction crafts where you can also stack GI Bill income.",
+  mission: "To connect the military community to quality careers in the building and construction industry.",
+  founded: "2003 (Center for Military Recruitment, Assessment and Veterans Employment)",
+  hq: "Washington, DC (affiliated with North America's Building Trades Unions)",
+  funding: "Funded by building-trades unions and signatory contractors; nonprofit.",
+  audience: ["Transitioning active-duty members", "Veterans", "National Guard", "Reservists"],
+  geographic: "Nationwide (and Canada) through the 15+ international building-trades unions and ~2,000 apprenticeship training centers.",
+  eligibility: "Active-duty, veterans, Guard, and Reserve. Most apprenticeships need no prior experience; honorable service and standard apprenticeship entry requirements apply.",
+  status: "active",
+  cost: { tags: ["free"], detail: "No cost to the veteran. Apprentices are paid employees from day one; GI Bill can supplement income during a registered apprenticeship (two checks: contractor + VA)." },
+  programs: [{
+    name: "Registered Apprenticeship Matching (incl. Wounded Warrior track)",
+    description: "Create a profile, browse construction-trade career and apprenticeship postings, and submit a 'digital handshake'; an H2H rep then helps complete requirements. Apprenticeships are 3–5 year earn-while-you-learn programs run by the trades themselves. A Wounded Warrior program supports disabled veterans.",
+    serves: "Veterans wanting a paid path into a skilled construction craft without student debt.",
+    apply: ["Build a profile at helmetstohardhats.org", "Express interest in a trade/apprenticeship (digital handshake)", "H2H rep verifies fit and requirements", "Enter a union registered apprenticeship as a paid employee"],
+    timeline: "Apprenticeships run 3–5 years; entry timing varies by trade and local.",
+    capacity: "Tens of thousands placed (org cites 30,000–50,000+ transitions)."
+  }],
+  barrier: { level: "Low-Medium", reasons: "Free and open with no experience required, but it's a connector — you still have to apply to and be accepted by a local apprenticeship, and availability depends on the trade and region." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Org cites tens of thousands of veterans transitioned into union construction careers over 20+ years (figures ranging from ~30,000 to 50,000+)."
+  },
+  roi: { score: 8, salaryImpact: "High", timeReturn: "High", note: "ESTIMATE. Paid-from-day-one apprenticeships with strong union wages/benefits and stackable GI Bill income make this one of the best no-degree paths; ROI builds over the multi-year apprenticeship." },
+  nobodyTells: [
+    "It's a matchmaker, not a school — H2H gets you in the door; the union local runs the actual apprenticeship.",
+    "You can collect GI Bill on top of your apprentice paycheck during a registered program (two income streams).",
+    "No prior experience is needed — most placements start at zero in the trade."
+  ],
+  fitByRank: {
+    junior_enlisted: "Excellent — paid path into a lifelong trade.",
+    nco: "Excellent — leadership translates to foreman/GF tracks.",
+    senior_enlisted: "Strong — second career with benefits and a pension.",
+    junior_officer: "Good if you want hands-on work; otherwise consider construction management.",
+    senior_officer: "Mixed — may prefer management/ownership routes."
+  },
+  careers: ["Electrician", "Plumber/Pipefitter", "Ironworker", "Operating Engineer", "Boilermaker", "Sheet Metal", "Many building-trades crafts"],
+  pathways: ["Service member → Helmets to Hardhats match → union registered apprenticeship (paid + GI Bill) → journeyworker → foreman/contractor"],
+  community: {
+    praise: ["Paid from day one, no debt", "GI Bill stacks on top", "Pension and healthcare via the union"],
+    complaints: ["It's a connector, not a guaranteed slot", "Apprenticeship availability varies by local", "Physically demanding"],
+    tips: ["Complete the digital-handshake profile fully", "Apply to multiple locals/trades", "Ask about the Wounded Warrior track if you're disabled"]
+  },
+  sources: ["helmetstohardhats.org", "nabtu.org", "military.com"]
+},
+
+{
+  id: "vet-to-drones",
+  name: "Vets to Drones",
+  verified: true,
+  categories: ["business", "trades"],
+  url: "https://news.va.gov/139892/launch-into-high-flying-career-drone-technology/",
+  tagline: "FAA Part 107 drone-pilot training and a path into the UAS industry.",
+  overview: "Vets to Drones is a veteran-focused program that trains participants toward the FAA Part 107 commercial drone-pilot certificate, with hands-on flying (including FPV and enterprise platforms), career-transition support, and community events aimed at placing veterans in the growing unmanned-aircraft-systems (UAS) industry.",
+  mission: "To equip veterans to launch careers across the commercial drone/UAS sector.",
+  founded: "Recent (active and promoted via VA outreach as of 2025)",
+  hq: "U.S.-based (UAS-industry-led)",
+  funding: "Industry/program funded; details limited.",
+  audience: ["Veterans", "Transitioning service members"],
+  geographic: "U.S.; training availability has been limited/waitlisted at times.",
+  eligibility: "Veterans and transitioning members interested in commercial drone work; FAA Part 107 requires being 16+, English-proficient, and passing the aeronautical knowledge exam.",
+  status: "active",
+  cost: { tags: ["self-pay", "partially-funded"], detail: "Program provides training and support; exact cost/funding varies and isn't fully published. The FAA Part 107 knowledge exam itself carries a separate test fee." },
+  programs: [{
+    name: "Part 107 Certification + UAS Career Track",
+    description: "Expert-led courses to prepare for the FAA Part 107 exam, hands-on training with FPV and enterprise drones, plus résumé/interview support, employer connections, and community 'fly days' and career fairs.",
+    serves: "Veterans wanting a credential and entry into commercial drone operations.",
+    apply: ["Check availability and register via Vets to Drones", "Complete Part 107 prep and hands-on training", "Pass the FAA Part 107 knowledge exam", "Use career support to connect with UAS employers"],
+    timeline: "Short course-based; varies.",
+    capacity: "Limited; sessions have filled/waitlisted."
+  }],
+  barrier: { level: "Low-Medium", reasons: "The Part 107 credential itself is attainable, but the drone job market is competitive and uneven, and program availability has been constrained (waitlists noted)." },
+  outcomes: { note: "Limited public outcome data. The verifiable asset is the FAA Part 107 certificate; downstream employment depends heavily on local demand and the operator's hustle." },
+  roi: { score: 5, salaryImpact: "Variable", timeReturn: "Medium", note: "ESTIMATE. The credential is cheap and fast, but UAS earnings vary widely — strong as a supplement or niche (inspection, mapping, public safety), weaker as a guaranteed full-time salary." },
+  nobodyTells: [
+    "Part 107 is a license to operate, not a job — the people who do well pair it with a niche (inspection, mapping, real estate, public safety).",
+    "Availability has been spotty; check current cohorts rather than assuming open enrollment.",
+    "You can sit the Part 107 exam independently too; the program's added value is hands-on training and employer connections."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good as a low-cost credential to test the field.",
+    nco: "Good — pair with a technical niche.",
+    senior_enlisted: "Mixed — better as a supplement than a sole income plan.",
+    junior_officer: "Mixed — consider the business/ownership angle.",
+    senior_officer: "Mixed — most useful if you'll build or lead a UAS operation."
+  },
+  careers: ["Commercial Drone Pilot", "UAS Inspection/Mapping", "Aerial Photography", "Public-Safety UAS Operator"],
+  pathways: ["Veteran → Vets to Drones training → FAA Part 107 → niche UAS work (inspection/mapping/public safety) or own operation"],
+  community: {
+    praise: ["Concrete, fast FAA credential", "Hands-on flying + community events", "Veteran-focused career support"],
+    complaints: ["Limited seats / waitlists", "Job market varies a lot by region", "Cost/funding not clearly published"],
+    tips: ["Decide your niche before training", "Verify current availability", "Build a portfolio of real flights to land work"]
+  },
+  sources: ["news.va.gov"]
+},
+
+{
+  id: "operation-warfighter",
+  name: "Operation Warfighter (OWF)",
+  verified: true,
+  categories: ["transition"],
+  url: "https://warriorcare.dodlive.mil/Care-Coordination/Operation-Warfighter/",
+  tagline: "Federal-agency internships for recovering service members during rehab.",
+  overview: "Operation Warfighter is a Department of Defense internship program that places wounded, ill, and injured (recovering) service members into temporary, non-paid internships with federal agencies during their recovery — building résumés, work skills, and a bridge back to the military or civilian workforce.",
+  mission: "To place recovering service members in supportive work settings that positively impact recovery and prepare them for transition.",
+  founded: "Established 2009 (per executive order); governed by DoDI 1300.25",
+  hq: "DoD Office of Warrior Care Policy; Regional Coordinators across 10 U.S. regions",
+  funding: "Department of Defense (members remain on military pay; internships are non-paid by the host agency).",
+  audience: ["Wounded, ill, and injured active-duty service members (all branches/components)"],
+  geographic: "Federal agencies nationwide, originally concentrated in the National Capital Region.",
+  eligibility: "Active-duty service members enrolled in IDES and/or assigned to a service Wounded Warrior program; requires medical and chain-of-command approval. U.S. citizenship and any agency security requirements apply.",
+  status: "active",
+  cost: { tags: ["free"], detail: "No cost to the service member, who continues to receive military pay. Internship is non-paid by the host agency; DoD provides transportation and reasonable accommodations." },
+  programs: [{
+    name: "Federal Internship Placement",
+    description: "A Regional Coordinator matches the recovering member to a federal-agency internship by interest and capability — typically ~20 hours/week for an average of 3–5 months — with mentoring and accommodations.",
+    serves: "Recovering service members ready to re-engage in meaningful work during rehabilitation.",
+    apply: ["Get medical + command approval to participate", "Work with your OWF Regional Coordinator", "Identify an internship matching your interests", "Complete onboarding/clearance with the host agency"],
+    timeline: "~20 hrs/week; average assignment 3–5 months.",
+    capacity: "5,700–6,000+ members placed program-wide."
+  }],
+  barrier: { level: "Low-Medium", reasons: "No cost and you stay on pay, but you must be medically and command approved and in the recovering-service-member population — it's not open to all transitioning members, and a job isn't guaranteed afterward." },
+  outcomes: { note: "VERIFIED program facts (DoD). Over 5,700–6,000 recovering members have been placed; no guarantee of employment, though some agencies hire OWF interns after separation." },
+  roi: { score: 6, salaryImpact: "Indirect", timeReturn: "High", note: "ESTIMATE. For eligible recovering members it's a low-risk way to rebuild skills and federal résumé while on pay; value is rehabilitative and network-building rather than a paycheck or guaranteed hire." },
+  nobodyTells: [
+    "It's specifically for recovering (wounded/ill/injured) members — not a general transition internship.",
+    "You stay on military pay; the agency role is unpaid, so there's no financial downside.",
+    "No guaranteed job after, but federal agencies do hire some interns once they separate."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good — builds first civilian-style work experience.",
+    nco: "Good — keeps skills active during recovery.",
+    senior_enlisted: "Good — federal résumé and agency contacts.",
+    junior_officer: "Good — explore federal career fields.",
+    senior_officer: "Good — leverage experience into agency networks.",
+    note: "Eligibility is driven by recovery status (IDES / Wounded Warrior program), not rank."
+  },
+  careers: ["Federal civil service (varies by agency placement)"],
+  pathways: ["Recovering service member → medical/command approval → OWF federal internship → transition back to duty or federal/civilian employment"],
+  community: {
+    praise: ["Stay on pay while building skills", "Real federal work experience", "Accommodations provided"],
+    complaints: ["Only for recovering members", "Unpaid by the agency", "No guaranteed hire"],
+    tips: ["Start with your Wounded Warrior program / Regional Coordinator", "Pick an agency aligned to your post-service goal", "Treat it as a foot in the federal door"]
+  },
+  sources: ["warriorcare.dodlive.mil", "dhs.gov", "doi.gov"]
+},
+
+{
+  id: "e2i",
+  name: "Education & Employment Initiative (E2I)",
+  verified: true,
+  categories: ["transition", "education"],
+  url: "https://warriorcare.dodlive.mil/Care-Coordination/Education-Employment-Initiative/",
+  tagline: "DoD career-readiness coaching that pairs education and employment for recovering members.",
+  overview: "E2I is a Department of Defense program (the education/employment counterpart to OWF, both under DoDI 1300.25) in which Regional Coordinators help wounded, ill, and injured service members build an individual career plan — identifying needed education, training, certifications, and employer connections — to posture them for transition.",
+  mission: "To enhance the career readiness of recovering service members by coordinating education and employment resources during their transition.",
+  founded: "Established under DoD warrior-care policy (NDAA FY2008); governed by DoDI 1300.25 (2013)",
+  hq: "DoD Office of Warrior Care Policy; Regional Coordinators nationwide",
+  funding: "Department of Defense; coordinates with VA, DOL, and community partners.",
+  audience: ["Wounded, ill, and injured (recovering) service members, all branches and components"],
+  geographic: "Nationwide via E2I Regional Coordinators.",
+  eligibility: "Service members assigned to a Wounded Warrior program and/or enrolled in IDES; coordinated through the Recovery Coordination Program.",
+  status: "active",
+  cost: { tags: ["free"], detail: "No cost to the service member. E2I matches no-cost education/certification resources and connects members to VR&E and community partners." },
+  programs: [{
+    name: "Individual Career Plan + Resource Matching",
+    description: "An E2I Regional Coordinator assesses goals, builds an individual career plan, and connects the member to education/training, certification/licensing, VR&E counselors, and regional employers. Often paired with an OWF internship.",
+    serves: "Recovering members deciding between further education and employment (or both).",
+    apply: ["Connect via your Wounded Warrior program / Recovery Care Coordinator", "Work with an E2I Regional Coordinator on a career plan", "Get matched to education, certification, or employer resources", "Coordinate with VR&E as needed"],
+    timeline: "Ongoing through the recovery/transition period.",
+    capacity: "Nationwide coordinator network."
+  }],
+  barrier: { level: "Low", reasons: "Free and supportive, but limited to the recovering-service-member population and dependent on coordinator availability in your region." },
+  outcomes: { note: "VERIFIED program facts (DoD). E2I is a coordination/coaching service; outcomes are individual and typically measured by successful education/employment transition rather than published placement rates." },
+  roi: { score: 6, salaryImpact: "Indirect", timeReturn: "High", note: "ESTIMATE. High-value navigation for eligible members — it surfaces no-cost training and the right benefits (incl. VR&E) — but it's planning/coordination, not a credential or job itself." },
+  nobodyTells: [
+    "E2I and OWF are siblings: E2I plans your education/employment, OWF gives you the federal internship — many members use both.",
+    "Coordinators can find no-cost certifications and route you to VR&E, so it's a navigation shortcut, not just advice.",
+    "It's for the recovering-member population, coordinated through your Wounded Warrior program."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — map a first civilian career path.",
+    nco: "Strong — align certifications to a target field.",
+    senior_enlisted: "Good — plan education + employment together.",
+    junior_officer: "Good — coordinate VR&E and grad-school options.",
+    senior_officer: "Good — strategic transition planning.",
+    note: "Eligibility is recovery-status driven, not rank-based."
+  },
+  careers: ["Varies — education and employment matched to the member's plan"],
+  pathways: ["Recovering member → E2I career plan → matched training/certification + VR&E → employment (often alongside an OWF internship)"],
+  community: {
+    praise: ["Free navigation of confusing benefits", "Finds no-cost certifications", "Coordinates with VR&E and employers"],
+    complaints: ["Only for recovering members", "Depends on coordinator availability", "Coaching, not a guaranteed outcome"],
+    tips: ["Ask your Recovery Care Coordinator to connect you", "Use it to unlock VR&E", "Pair it with an OWF internship"]
+  },
+  sources: ["warriorcare.dodlive.mil", "esd.whs.mil (DoDI 1300.25)", "doi.gov"]
+},
+
+{
+  id: "invets",
+  name: "INvets",
+  verified: true,
+  categories: ["transition"],
+  url: "https://www.invets.org/",
+  tagline: "Recruits and relocates veterans into Indiana careers — with relocation help.",
+  overview: "INvets is an Indiana nonprofit and public-private partnership that recruits transitioning service members, veterans, and spouses to fill Indiana jobs, providing résumé/interview help, employer matching across 500+ partner companies, and relocation/transition support to move to and stay in the state.",
+  mission: "To recruit, employ, and retain veterans and their families in Indiana.",
+  founded: "2020 (501(c)(3), with the Indiana Lieutenant Governor's office)",
+  hq: "Indiana",
+  funding: "Public-private partnership (state funding plus employer partners); no pay-to-play model.",
+  audience: ["Transitioning service members", "Veterans", "Military spouses"],
+  geographic: "Indiana-focused; recruits at ~40 military installations in the U.S. and abroad.",
+  eligibility: "Veterans and spouses open to working in Indiana; create a profile and apply through INvets to partner employers.",
+  status: "active",
+  cost: { tags: ["free"], detail: "Free to veterans and spouses. Indiana initiatives have offered relocation incentives; INvets adds résumé help and direct employer exposure." },
+  programs: [{
+    name: "Recruit–Employ–Retain",
+    description: "A three-step model: recruit veterans (including at overseas bases), employ them by matching to 500+ Indiana partner companies with résumé/interview support and direct hiring-manager exposure, and retain them with relocation and community-integration help.",
+    serves: "Veterans/spouses willing to relocate to Indiana for career opportunities.",
+    apply: ["Create an account at invets.org and enter military + civilian experience", "INvets translates skills and submits you to partner employers", "Hiring managers get a direct heads-up on your application", "Use relocation and retention support after an offer"],
+    timeline: "Varies by job search and relocation.",
+    capacity: "550+ employer partners; recruits at ~40 installations."
+  }],
+  barrier: { level: "Low", reasons: "Free and high-touch, but the catch is geographic: the payoff requires relocating to (or already being open to) Indiana." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Org/state figures cite ~2,500 new residents attracted and ~839 placed into Hoosier jobs (2020–25), generating tens of millions in state/local taxes."
+  },
+  roi: { score: 6, salaryImpact: "Medium", timeReturn: "Medium-High", note: "ESTIMATE. Strong, personalized placement and relocation support — excellent if Indiana fits your plans, irrelevant if it doesn't, since the whole model is state-specific." },
+  nobodyTells: [
+    "The entire value proposition is location — this is for veterans open to moving to Indiana.",
+    "Your application gets a direct nudge to the hiring manager, which beats a cold apply.",
+    "Spouses are explicitly included in the matching."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good — entry roles with advancement and a low cost of living.",
+    nco: "Good — strong manufacturing/logistics/tech demand.",
+    senior_enlisted: "Good — management-track roles available.",
+    junior_officer: "Good — professional roles across Indiana industries.",
+    senior_officer: "Mixed — depends on whether Indiana fits your goals."
+  },
+  careers: ["Manufacturing", "Logistics", "Tech", "Energy", "Banking/Finance", "Healthcare"],
+  pathways: ["Veteran/spouse → INvets profile + skills translation → Indiana partner employer (with relocation support) → established in-state career"],
+  community: {
+    praise: ["Direct hiring-manager exposure", "Relocation/retention support", "Free, not pay-to-play"],
+    complaints: ["Indiana-only", "Requires relocation for most", "Not useful if you're staying elsewhere"],
+    tips: ["Fill your profile out completely (MOS, evals)", "Be candid about willingness to relocate", "Ask about relocation incentives"]
+  },
+  sources: ["invets.org", "in.gov", "military.com"]
+},
+
+{
+  id: "vts",
+  name: "Veterans Transition Support (VTS)",
+  verified: true,
+  categories: ["transition", "education"],
+  url: "https://veteranstransitionsupport.org/",
+  tagline: "No-cost OSHA and Lean Six Sigma certs plus transition coaching (San Diego area).",
+  overview: "Veterans Transition Support is a nonprofit (active since 2014) offering no- and low-cost transition programs — free OSHA 10, OSHA 30, free Lean Six Sigma Yellow Belt and a 5-day Green Belt, career coaching, plus VA home-loan and disability-claim guidance — primarily serving the Southern California / San Diego military community.",
+  mission: "To empower veterans, service members, and military spouses with practical credentials and guidance for a smooth transition.",
+  founded: "2014",
+  hq: "San Diego area, CA (Camp Pendleton, San Diego, San Marcos, Oceanside)",
+  funding: "Nonprofit; donor- and partner-supported.",
+  audience: ["Veterans", "Active-duty service members", "Reservists", "Military spouses", "Base staff"],
+  geographic: "Southern California (in-person classes); some training delivered via Zoom.",
+  eligibility: "Veterans, service members, reservists, and military spouses; programs are no-cost or low-cost.",
+  status: "active",
+  cost: { tags: ["free", "self-pay"], detail: "OSHA 10, Lean Six Sigma Yellow Belt, and the career program are free; OSHA 30 and the 5-day Green Belt are offered at low cost." },
+  programs: [{
+    name: "Safety & Process Certifications + Career Transition",
+    description: "Weekend OSHA 10/30 safety training, free Lean Six Sigma Yellow Belt and a 5-day Green Belt (Zoom with live projects), one-on-one résumé/cover-letter/LinkedIn coaching, interview prep, plus VA home-loan and disability-claim workshops.",
+    serves: "Members wanting concrete, employer-recognized credentials and transition coaching.",
+    apply: ["Browse programs at veteranstransitionsupport.org", "Register for OSHA, Lean Six Sigma, or the career program", "Attend in-person (SoCal) or via Zoom", "Use 1:1 coaching and VA workshops as needed"],
+    timeline: "Weekend/short courses; Green Belt is 5 days.",
+    capacity: "Cohort/class based."
+  }],
+  barrier: { level: "Low", reasons: "Free or low-cost and open, but in-person offerings are concentrated in the San Diego area, so geography limits some classes (though several run on Zoom)." },
+  outcomes: { note: "ESTIMATE / org-reported. VTS cites credential value, e.g., safety supervisor roles starting ~$50K and safety managers ~$60K–$80K, with no degree required." },
+  roi: { score: 6, salaryImpact: "Medium", timeReturn: "High", note: "ESTIMATE. Cheap, fast, employer-recognized certs (OSHA, Lean Six Sigma) that pad a résumé quickly; best ROI for those near San Diego or able to take the Zoom classes." },
+  nobodyTells: [
+    "The Lean Six Sigma and OSHA certs are the draw — quick, recognized résumé-builders, several of them free.",
+    "Much of the value is local to San Diego, though Green/Yellow Belt run on Zoom.",
+    "They also walk you through VA disability claims and the VA home loan, which surprises people."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — fast certs with no degree required.",
+    nco: "Strong — Lean Six Sigma complements leadership experience.",
+    senior_enlisted: "Good — safety/process roles value the certs.",
+    junior_officer: "Good — Green Belt signals process competency.",
+    senior_officer: "Mixed — may already exceed these certs."
+  },
+  careers: ["Safety Supervisor/Manager (OSHA)", "Process Improvement / Operations (Lean Six Sigma)"],
+  pathways: ["Service member (SoCal) → VTS OSHA + Lean Six Sigma certs + coaching → safety or operations role"],
+  community: {
+    praise: ["Free/low-cost recognized certs", "Hands-on Lean Six Sigma projects", "VA claim + home-loan guidance"],
+    complaints: ["Mostly San Diego-area in person", "Smaller/regional org", "Limited national reach"],
+    tips: ["Stack OSHA + Lean Six Sigma for a stronger résumé", "Take the Zoom Belt classes if you're out of area", "Use the VA disability workshop before you file"]
+  },
+  sources: ["veteranstransitionsupport.org"]
+},
+
+{
+  id: "sitreps2steercos",
+  name: "Sitreps 2 Steercos",
+  verified: true,
+  categories: ["transition", "business"],
+  url: "https://www.sitreps.com/",
+  tagline: "Community + AI tools for veterans targeting business, defense-tech, and PE roles.",
+  overview: "Sitreps 2 Steercos is a community-driven platform founded by West Point grad and former Army aviator Kyle Eberly that helps veterans transition into business and professional careers — with a résumé builder, an AI advisor trained on real veteran transitions, an MBA/GI Bill decision calculator, a salary explorer, a 'Pathways' career-odds tool, curated job postings, and in-person meetups.",
+  mission: "To help veterans navigate post-military business careers and higher education with realistic, data-grounded guidance.",
+  founded: "Recent (active and growing as of 2024–2025)",
+  hq: "U.S. (founder based in Carlsbad, CA; community meetups in multiple cities)",
+  funding: "Private/community platform; also runs talent-placement/recruiting.",
+  audience: ["Transitioning officers and senior enlisted", "Veterans targeting business, MBA, defense-tech, PE/finance", "Mid-career veterans"],
+  geographic: "Online platform plus regional meetups (e.g., San Diego/Orange County, Anchorage).",
+  eligibility: "Open to veterans and transitioning members exploring business/professional and higher-ed paths.",
+  status: "active",
+  cost: { tags: ["free"], detail: "Core community content and tools are free to use; the platform also offers coaching and recruiting/talent-placement services." },
+  programs: [{
+    name: "Pathways + AI Advisor + Community",
+    description: "Self-serve tools — 'Pathways' estimates your real odds/timeline for a target career (defense tech, PE, product, IB, entrepreneurship), an AI advisor trained on millions of tokens of real veteran transition data, an MBA decision and GI Bill calculator, salary explorer, and a résumé builder — plus events, success stories, and curated veteran job postings.",
+    serves: "Veterans deciding between MBA vs. direct entry and aiming at competitive business/defense-tech roles.",
+    apply: ["Create an account at sitreps.com", "Run Pathways against a target career", "Use the AI advisor, MBA/GI Bill calculator, and salary explorer", "Join a regional meetup or browse curated jobs"],
+    timeline: "Self-paced; tools give quick (minutes) feedback.",
+    capacity: "Open community."
+  }],
+  barrier: { level: "Low", reasons: "Free and self-serve; the main limitation is that it's most useful for the business/MBA/defense-tech audience rather than trades or hands-on careers." },
+  outcomes: { note: "Limited independent outcome data (relatively new). The verifiable value is decision-support and community/recruiting for business-track veterans." },
+  roi: { score: 6, salaryImpact: "Variable", timeReturn: "High", note: "ESTIMATE. The MBA and career-odds tools can save a veteran from an expensive wrong turn (e.g., a needless MBA), which is high-leverage; outcomes depend on the individual's target field." },
+  nobodyTells: [
+    "The Pathways tool is blunt on purpose — it'll tell you a target (e.g., investment banking or PE) is a stretch given your actual background, logos aside.",
+    "The MBA/GI Bill calculator is aimed at stopping veterans from spending a benefit on a degree they don't need.",
+    "It skews toward officers/senior enlisted heading into business, defense-tech, and finance."
+  ],
+  fitByRank: {
+    junior_enlisted: "Mixed — some tools help, but it's tilted toward business-track transitions.",
+    nco: "Good — MBA decision and career-odds tools are useful.",
+    senior_enlisted: "Good — business and management targeting.",
+    junior_officer: "Strong — core audience for MBA/PE/defense-tech paths.",
+    senior_officer: "Strong — strategic career and education decisions."
+  },
+  careers: ["Consulting", "Private Equity / Finance", "Defense Tech", "Product Management", "Investment Banking", "Entrepreneurship"],
+  pathways: ["Officer/NCO → Sitreps Pathways + MBA calculator → targeted business/defense-tech role or MBA decision → corporate/PE/startup"],
+  community: {
+    praise: ["Honest, data-grounded career-odds tool", "MBA decision support", "Active in-person meetups + curated jobs"],
+    complaints: ["Newer, limited independent track record", "Business/MBA-skewed (less for trades)", "Best for officers/senior enlisted"],
+    tips: ["Run Pathways before committing to an MBA", "Attend a regional meetup to network", "Use the AI advisor to pressure-test your plan"]
+  },
+  sources: ["sitreps.com", "remoterocketship.com", "builtin.com"]
+},
+
+{
+  id: "my-steady-mind",
+  name: "My Steady Mind",
+  verified: true,
+  categories: ["health"],
+  url: "https://mysteadymind.com/",
+  tagline: "Veteran-built 'mental fitness' training — proactive skills, not therapy.",
+  overview: "My Steady Mind is a veteran-owned mental-fitness training academy founded by multi-branch veteran Dr. Seth Hickerson that teaches proactive, skills-based techniques (self-awareness, self-regulation, situational awareness, performance under pressure) through an online course with live coaching — framed explicitly as training, not clinical treatment.",
+  mission: "To help individuals and teams strengthen mental fitness and performance under pressure with practical, science-based tools.",
+  founded: "2021",
+  hq: "Melbourne, FL (Groundswell Startups)",
+  funding: "Veteran-owned company; pitch-competition and client/organizational revenue.",
+  audience: ["Veterans", "First responders", "High-pressure professions (public safety, healthcare, athletics, construction, business)"],
+  geographic: "Online/nationwide.",
+  eligibility: "Open to individuals and organizations; veterans and first responders have had free-access windows.",
+  status: "active",
+  cost: { tags: ["free", "self-pay"], detail: "Veterans and first responders have been offered free access to core courses (e.g., a window through May 31, 2026); organizations and individuals can also pay. A free mental-fitness assessment is offered." },
+  programs: [{
+    name: "Mental Fitness Training (Foundations / Xpress / multi-module)",
+    description: "An online, multi-module 'mental gym' (with Foundations and a shorter Xpress course) supported by live coaching, teaching regulation and focus skills for high-pressure moments. DoD-approved and accredited by the National Academy of Sports Medicine per the company.",
+    serves: "People who want proactive performance/resilience skills rather than clinical care.",
+    apply: ["Take the free mental-fitness assessment at mysteadymind.com", "Request free access (veterans/first responders) or enroll", "Work through the online modules with coaching support"],
+    timeline: "Self-paced courses; Xpress is the short version.",
+    capacity: "Online; 6,000+ students reported."
+  }],
+  barrier: { level: "Low", reasons: "Online and frequently free for veterans; the main caveat is conceptual — it's performance training, so anyone needing clinical mental-health care should pair it with professional treatment." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Company cites outcomes such as a reported 50% reduction in suicidal ideation associated with its training at one state police department and a 25% reduction in recordable incident rates at one employer; independent verification is limited."
+  },
+  roi: { score: 6, salaryImpact: "Indirect", timeReturn: "Medium", note: "ESTIMATE. Low/no cost and genuinely useful as proactive resilience skill-building; it's a wellness/performance tool, not a credential or a substitute for clinical treatment." },
+  nobodyTells: [
+    "It's training, not therapy — explicitly proactive skills, so don't expect it to replace clinical care if you need it.",
+    "Veterans and first responders have recurring free-access windows, so check before paying.",
+    "Start with the free 30-second assessment and the short Xpress course before committing."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good — build regulation skills early.",
+    nco: "Good — useful for leading under pressure.",
+    senior_enlisted: "Good — team-level resilience tools.",
+    junior_officer: "Good — performance-under-pressure framing.",
+    senior_officer: "Good — applicable to high-stakes leadership.",
+    note: "Broadly applicable; not rank-dependent."
+  },
+  careers: ["N/A — resilience/performance skills supporting any path"],
+  pathways: ["Veteran → free mental-fitness assessment → Foundations/Xpress course + coaching → ongoing resilience practice"],
+  community: {
+    praise: ["Often free for veterans", "Practical, in-the-moment tools", "Veteran-built; performance-oriented"],
+    complaints: ["Not a substitute for clinical care", "Outcome claims not independently verified", "Online-only"],
+    tips: ["Use the free assessment first", "Pair with professional care if you need treatment", "Try the short Xpress course to start"]
+  },
+  sources: ["mysteadymind.com", "natlawreview.com", "swellstartups.com"]
+},
+
+{
+  id: "movement-rx",
+  name: "Movement Rx",
+  verified: true,
+  categories: ["health"],
+  url: "https://movement-rx.com/",
+  tagline: "Veteran-led physical therapy + human performance to fix pain at the root.",
+  overview: "Founded in 2013 by Marine Corps veteran Dr. Theresa Larson (DPT), Movement Rx is a veteran-led physical therapy and human-performance company that blends rehab with strength/mobility coaching — in San Diego clinics and via digital programs — to address the root causes of pain rather than just symptoms, serving athletes, service members, and organizations.",
+  mission: "To help people move well and lead well by integrating movement, rehab, and performance.",
+  founded: "2013",
+  hq: "San Diego, CA",
+  funding: "Private (veteran-led company).",
+  audience: ["Veterans", "Service members", "Athletes", "Organizations/teams", "General public with pain or performance goals"],
+  geographic: "San Diego (in-person) plus digital/online programs nationwide.",
+  eligibility: "Open to the public; cash-pay and digital options. Veteran-led with offerings relevant to the military community.",
+  status: "active",
+  cost: { tags: ["self-pay"], detail: "Primarily cash-pay physical therapy and paid digital programs (e.g., Low Back Fix, Shoulder Fix, Knee Fix). Not a free veteran benefit; check insurance/eligibility separately." },
+  programs: [{
+    name: "Performance Physical Therapy + Digital 'Fix' Programs",
+    description: "One-on-one performance-focused physical therapy (root-cause movement assessment, mobility and strength work) in San Diego, plus self-guided online programs combining PT and strength training for the low back, shoulder, and knee. Also offers corporate wellness and leadership/well-being workshops.",
+    serves: "People wanting to eliminate pain and return to active living/performance, not just 'manage' symptoms.",
+    apply: ["Book an appointment (San Diego) or choose a digital program at movement-rx.com", "Complete a movement assessment", "Follow the rehab + strength plan (in-person or online)"],
+    timeline: "Varies; digital programs are self-paced.",
+    capacity: "Clinic + scalable digital."
+  }],
+  barrier: { level: "Medium", reasons: "High-quality but largely cash-pay, and in-person services are San Diego-based; the digital programs widen access but still cost money — this is a paid wellness service, not a free VA-style benefit." },
+  outcomes: { note: "Reviews are strongly positive (pain elimination, return to activity); outcomes are individual and not published as aggregate metrics." },
+  roi: { score: 5, salaryImpact: "Indirect", timeReturn: "Medium", note: "ESTIMATE. Strong for physical wellbeing/return-to-activity, but it's a paid service with limited geographic reach; value is health-and-performance, not career or income." },
+  nobodyTells: [
+    "It's cash-pay performance PT, not a free veteran benefit — budget for it or use the cheaper digital programs.",
+    "The approach targets root-cause movement, so expect strength work, not just passive treatment.",
+    "In-person is San Diego; the 'Fix' digital programs are how everyone else accesses it."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good if you can pay; digital programs are the affordable route.",
+    nco: "Good — performance and injury-prevention focus.",
+    senior_enlisted: "Good — address accumulated wear-and-tear.",
+    junior_officer: "Good — return-to-activity and performance.",
+    senior_officer: "Good — also offers leadership/well-being workshops.",
+    note: "Health service; fit is about goals and budget, not rank."
+  },
+  careers: ["N/A — physical health/performance service"],
+  pathways: ["Veteran with pain/performance goal → Movement Rx assessment (clinic or digital) → rehab + strength plan → return to active living"],
+  community: {
+    praise: ["Root-cause approach", "Veteran-led, performance-minded", "Digital programs extend access"],
+    complaints: ["Cash-pay, not free", "In-person limited to San Diego", "Not a VA benefit"],
+    tips: ["Try a digital 'Fix' program if you're out of area", "Come ready to do strength work", "Confirm any insurance/cash-pay details up front"]
+  },
+  sources: ["movement-rx.com", "linkedin.com/company/movement-rx"]
+},
+
+
+{
+  id: "virtual-vocations",
+  name: "Virtual Vocations",
+  verified: true,
+  categories: ["remote"],
+  url: "https://www.virtualvocations.com/",
+  tagline: "Hand-screened, scam-filtered remote job listings (free + paid tiers).",
+  overview: "Virtual Vocations is a family-owned, all-remote job board (since 2007) whose researchers hand-screen remote and work-from-home listings to filter out scams. A free account gives partial access and resources; a paid membership unlocks the full database, alerts, and career tools. It's not veteran-specific but is widely used by military spouses for portable, location-independent work.",
+  mission: "To help job seekers find legitimate telecommuting jobs without sifting through scams.",
+  founded: "2007",
+  hq: "Tucson, AZ (100% remote company)",
+  funding: "Private, family-owned; revenue from memberships and employer services.",
+  audience: ["Remote job seekers", "Military spouses (portable careers)", "Veterans", "Parents, students, retirees, people needing flexibility"],
+  geographic: "U.S.-focused remote roles; usable from anywhere.",
+  eligibility: "Open to anyone; free registration, with optional paid subscriptions.",
+  status: "active",
+  cost: { tags: ["free", "self-pay"], detail: "Free membership gives partial/rotating access and resources. Premium plans (roughly one-, three-, and six-month options) unlock the full vetted database, alerts, and tools; subscriptions auto-renew." },
+  programs: [{
+    name: "Curated Remote Job Database",
+    description: "Researchers compile and vet remote listings across 45+ categories; members search/filter, set alerts, track applications, and access a Remote Career Center (guides, recorded coaching, courses). Applications are submitted on the employer's own site.",
+    serves: "Anyone prioritizing legitimate remote work, especially those who value time saved over a free-but-noisy board.",
+    apply: ["Register free at virtualvocations.com", "Browse partial listings and resources", "Optionally upgrade to premium for full access + alerts", "Apply directly on employer sites"],
+    timeline: "Self-paced; listings updated daily.",
+    capacity: "2–4M+ jobseekers served over time."
+  }],
+  barrier: { level: "Low", reasons: "Free to start; full value is behind a paid subscription. Reviews are mixed — some find it well worth the time saved, others resent paying to apply and report cancellation friction." },
+  outcomes: { note: "ESTIMATE / org-reported. Company cites 2–4M+ jobseekers assisted and many testimonials; jobs are aggregated (also findable elsewhere), so the paid value is the scam-filtering and curation, not exclusivity." },
+  roi: { score: 5, salaryImpact: "Variable", timeReturn: "Medium", note: "ESTIMATE. Useful time-saver for remote-only searches and a fit for spouses needing portability, but it's a paid aggregator — many listings exist on free boards too, so value depends on how much you value the curation." },
+  nobodyTells: [
+    "The product you're paying for is curation and scam-filtering, not exclusive jobs — many listings also appear on Indeed/LinkedIn.",
+    "It's not veteran-specific, but it's a strong fit for military spouses who need work that moves with PCS orders.",
+    "Subscriptions auto-renew — set a reminder to cancel if you land a job."
+  ],
+  fitByRank: {
+    junior_enlisted: "Mixed — a free board may suffice; consider spouses.",
+    nco: "Mixed — useful if you want remote-only and value curation.",
+    senior_enlisted: "Mixed — same.",
+    junior_officer: "Mixed — depends on remote preference.",
+    senior_officer: "Mixed — depends on remote preference.",
+    note: "Most valuable for military spouses needing portable, remote careers."
+  },
+  careers: ["Customer service", "Writing/editing", "Education/tutoring", "Healthcare admin", "Account management", "Many remote categories"],
+  pathways: ["Military spouse / remote-seeker → Virtual Vocations (free or premium) → vetted remote role → portable career across PCS moves"],
+  community: {
+    praise: ["Scam-filtered listings", "Remote-only focus saves time", "Good for portable spouse careers"],
+    complaints: ["Pay-to-apply for most jobs", "Jobs also on free boards", "Auto-renew/cancellation friction reported"],
+    tips: ["Start with the free tier", "Compare against free boards before paying", "Turn off auto-renew once hired"]
+  },
+  sources: ["virtualvocations.com", "linkedin.com/company/virtual-vocations"]
+},
+
+{
+  id: "work-for-warriors",
+  name: "Work for Warriors (WFW)",
+  verified: true,
+  categories: ["transition", "remote"],
+  url: "https://workforwarriors.org/",
+  tagline: "Free direct job placement for California's Guard, Reserve, veterans, and families.",
+  overview: "Work for Warriors is a free, state- and federally-funded direct-placement program created by the California National Guard (2012) that connects service members, veterans, military family members, and Youth Academy graduates to California employers — with veteran staffing consultants who actively put candidates in front of hiring managers.",
+  mission: "To reduce unemployment and underemployment among California's military, veterans, and their families.",
+  founded: "2012 (California Military Department / State Assembly)",
+  hq: "California (California National Guard / California Military Department)",
+  funding: "State and federally funded; free to participants and a low cost-per-placement model.",
+  audience: ["California National Guard", "Reserve", "Active duty", "Veterans (all eras)", "Military spouses/dependents", "Gold Star families", "Youth Academy graduates"],
+  geographic: "California-focused (the WFW model has been replicated by ~15 other states).",
+  eligibility: "California's military community — Guard, Reserve, active duty, veterans, family members, and Youth Academy grads.",
+  status: "active",
+  cost: { tags: ["free"], detail: "Completely free to participants and employers; funded by the state and federal government." },
+  programs: [{
+    name: "Direct Placement + Career Services",
+    description: "Veteran Staffing Consultants review your skills and interests, connect you to roles from 2,000+ California employer partners, build/strengthen your résumé, prep you for interviews, and proactively advocate to hiring managers on your behalf.",
+    serves: "California's military community seeking full-time civilian employment.",
+    apply: ["Contact Work for Warriors via workforwarriors.org", "Meet with a Veteran Staffing Consultant", "Get résumé + interview support", "Be matched and directly referred to employer partners"],
+    timeline: "Varies by search.",
+    capacity: "2,000+ employer partners; thousands placed (4,000+ within first three years)."
+  }],
+  barrier: { level: "Low", reasons: "Free, high-touch, and proactive; the constraint is geographic — it's built around California employers and the California military community." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Cal Guard reported 4,000+ placements within the program's first three years at roughly $750 per job — about a tenth the cost of comparable government veteran-jobs programs — and it became the National Guard Bureau's model program."
+  },
+  roi: { score: 7, salaryImpact: "Medium-High", timeReturn: "High", note: "ESTIMATE. Free, proactive direct placement with employer advocacy is high-value for California's military community; irrelevant outside CA unless your state copied the model." },
+  nobodyTells: [
+    "Consultants don't just email you jobs — they call hiring managers to vouch for you, which beats a cold application.",
+    "It's California-centric, but ~15 other states adopted the model, so check whether yours has a version.",
+    "Family members, dependents, and Youth Academy grads qualify too, not just the service member."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — proactive placement for first civilian roles.",
+    nco: "Strong — leadership translates well to partner employers.",
+    senior_enlisted: "Good — management-track placement.",
+    junior_officer: "Good — professional roles across CA employers.",
+    senior_officer: "Mixed — depends on whether CA employers fit your goals.",
+    note: "Open to Guard/Reserve/active/veterans and families in California."
+  },
+  careers: ["Cross-industry across 2,000+ California employers"],
+  pathways: ["CA Guard/Reserve/veteran/family → Work for Warriors consultant + résumé prep → direct referral to CA employer → full-time hire"],
+  community: {
+    praise: ["Free and proactive", "Consultants advocate directly to hiring managers", "Includes families and Youth Academy grads"],
+    complaints: ["California-only", "Less useful if relocating out of state", "Employer mix is CA-centric"],
+    tips: ["Be clear about target roles and locations in CA", "Lean on the consultant's employer relationships", "Check if your state copied the WFW model"]
+  },
+  sources: ["workforwarriors.org", "dvidshub.net", "nationalguard.com"]
+},
+
+{
+  id: "7-eagle",
+  name: "7 Eagle Group",
+  verified: true,
+  categories: ["transition", "remote"],
+  url: "https://7eagle.com/",
+  tagline: "Free veteran recruiting firm + SkillBridge program with a job-conversion focus.",
+  overview: "7 Eagle Group is a nationwide, military-focused recruiting firm (founded 2014) that connects transitioning service members, veterans, and military spouses with employers — for free to the job seeker. It runs an authorized DoD SkillBridge program (7 Eagle Academy) and a Talent Network, placing candidates from entry-level to C-suite across remote, hybrid, and in-person roles.",
+  mission: "To connect talented military veterans and transitioning service members with businesses that value their skills and grit.",
+  founded: "2014",
+  hq: "Amherst, MA (services nationwide)",
+  funding: "Private recruiting firm; revenue from employer clients (free to job seekers).",
+  audience: ["Transitioning service members", "Veterans", "Military spouses"],
+  geographic: "Nationwide; many remote/hybrid placements.",
+  eligibility: "Veterans, active-duty (within SkillBridge window for the Academy), and military spouses; join the free Talent Network.",
+  status: "active",
+  cost: { tags: ["free"], detail: "Free to candidates — employers pay the recruiting firm. SkillBridge participants remain on military pay during the fellowship." },
+  programs: [{
+    name: "Talent Network + 7 Eagle Academy (SkillBridge)",
+    description: "Join a free talent network to get matched with hundreds of employers, with a vetting process and one-minute video intros. 7 Eagle Academy is an authorized DoD SkillBridge program offering training, coaching, and an internship that's designed to convert to a permanent W-2 role.",
+    serves: "Service members in their SkillBridge window and veterans/spouses wanting recruiter-driven placement.",
+    apply: ["Join the free Talent Network at 7eagle.com", "Complete vetting / video intro", "Get matched to employer or SkillBridge internship", "Convert internship to permanent role (org cites ~93% conversion)"],
+    timeline: "SkillBridge internships run 30–180 days.",
+    capacity: "Hundreds of placements; ~2,000 openings cited at a time."
+  }],
+  barrier: { level: "Low", reasons: "Free and open to join, though best results come from being marketable (certs, clearances, SME depth). As a recruiter, it's employer-driven — your match depends on demand for your skill set." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Org reports ~93% of SkillBridge interns convert to W-2 employees and placements at hundreds of companies (clients cited include Xerox, Meta, Lionsgate, and others)."
+  },
+  roi: { score: 6, salaryImpact: "Medium-High", timeReturn: "High", note: "ESTIMATE. Free recruiter representation with a strong SkillBridge-to-hire conversion is high-leverage, especially for cleared or technical candidates; outcomes vary with employer demand for your background." },
+  nobodyTells: [
+    "It's a recruiting firm, so it works best when employers want your specific skill set — be marketable (certs, clearance, SME depth).",
+    "The SkillBridge Academy is the standout: you intern on military pay with a high conversion-to-hire rate.",
+    "It has a sister offering (FreelanceVets) and a cleared-talent network for security-clearance roles."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good — entry-level placements available.",
+    nco: "Good — technical and leadership roles.",
+    senior_enlisted: "Strong — management and cleared roles.",
+    junior_officer: "Strong — SkillBridge-to-corporate conversion.",
+    senior_officer: "Good — up to C-suite placements for the right fit."
+  },
+  careers: ["Cybersecurity / IT", "Project/Program Management", "Operations", "Sales", "Defense/Aerospace", "Cross-industry"],
+  pathways: ["Service member → 7 Eagle Talent Network / SkillBridge Academy → host-company internship → permanent W-2 hire"],
+  community: {
+    praise: ["Free to candidates", "Strong SkillBridge-to-hire conversion", "Remote/hybrid options"],
+    complaints: ["Employer-driven matching", "Best for marketable/cleared candidates", "Smaller than the big nonprofits"],
+    tips: ["Sharpen your résumé and certs before joining", "Use SkillBridge during terminal leave", "Ask about the cleared-talent network if you hold a clearance"]
+  },
+  sources: ["7eagle.com", "careerpcs.com", "careerrecon.com"]
+},
+
+{
+  id: "veterans-in-tech",
+  name: "VetsinTech (VIT)",
+  verified: true,
+  categories: ["it", "leadership"],
+  url: "https://vetsintech.co/",
+  tagline: "National nonprofit bridging veterans and spouses into tech: the '3 E's.'",
+  overview: "VetsinTech (VIT) is a national nonprofit dedicated 100% to springboarding veterans and military spouses into technology careers through its '3 E's' — Education (VIT Academy training in cyber, cloud, AI/ML, data), Employment (skill translation, résumé help, and an employer coalition of Google, Microsoft, Amazon, and more), and Entrepreneurship (the S.U.N. startup network, VetCap, and pitch competitions).",
+  mission: "To support veterans and military spouses by connecting them to the technology ecosystem across education, employment, and entrepreneurship.",
+  founded: "2011 (co-founded by Katherine Webster)",
+  hq: "San Francisco, CA",
+  funding: "Nonprofit; supported by tech-industry partners and philanthropy (e.g., Craig Newmark Philanthropies, JPMorgan Chase).",
+  audience: ["Veterans", "Active-duty (transitioning)", "Military spouses"],
+  geographic: "Nationwide; 100,000+ community members and 50+ chapter leaders across ~27 cities, plus virtual programs.",
+  eligibility: "Veterans, transitioning service members, and military spouses interested in tech.",
+  status: "active",
+  cost: { tags: ["free", "partially-funded"], detail: "Most training and services are free (a refundable deposit may apply to select courses). Programs are funded by industry partners." },
+  programs: [{
+    name: "VIT Academy + Employer Coalition + S.U.N. (3 E's)",
+    description: "Technical training (web dev, cybersecurity, cloud, AI/ML, data analytics) with a ~90% graduation rate; employment services including military-skill translation and direct connections to a coalition of top tech employers; and an entrepreneurship startup network (S.U.N.) with bootcamps, pitch events, and investor access.",
+    serves: "Veterans/spouses entering or leveling up in tech, whether as employees or founders.",
+    apply: ["Explore programs at vetsintech.co", "Enroll in a VIT Academy course or submit a résumé to the employer coalition", "Join a local chapter or the S.U.N. startup network", "Attend events like the annual VIT Invasion"],
+    timeline: "Course-based; varies by track.",
+    capacity: "Trains 1,000+ veterans annually."
+  }],
+  barrier: { level: "Low", reasons: "Mostly free and open, but tech training requires real effort and some baseline aptitude; the strongest outcomes go to those who complete the Academy and engage the employer coalition." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Org reports ~90% graduation rate, ~91% of graduates hired or upskilled within 6 months, and a community of 100,000+ veterans/spouses."
+  },
+  roi: { score: 7, salaryImpact: "High", timeReturn: "Medium-High", note: "ESTIMATE. Free, employer-connected tech training with strong reported placement is high-value for those committed to a tech path; the three-pronged model also serves would-be founders." },
+  nobodyTells: [
+    "It's not just training — the employer coalition (Google, Microsoft, Amazon, etc.) is the real differentiator for getting hired.",
+    "Spouses are a core focus, including a RAND-backed policy push for spouse tech employment.",
+    "If you want to build a company, the S.U.N. startup network and pitch events are a distinct third track most people miss."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — entry to tech with training + employer access.",
+    nco: "Strong — technical upskilling and placement.",
+    senior_enlisted: "Good — tech management or IC roles.",
+    junior_officer: "Good — IC tech or startup track.",
+    senior_officer: "Mixed — best via the entrepreneurship/leadership track."
+  },
+  careers: ["Software Engineer", "Cybersecurity Specialist", "Cloud Engineer", "Data Scientist", "Product Manager", "Tech Founder"],
+  pathways: ["Veteran/spouse → VIT Academy (cyber/cloud/AI) → employer coalition placement → tech role; or → S.U.N. → veteran-led startup"],
+  community: {
+    praise: ["Free training + real employer coalition", "Strong spouse focus", "Entrepreneurship track for founders"],
+    complaints: ["Requires real effort/aptitude", "Self-driven engagement matters", "Outcome stats are org-reported"],
+    tips: ["Finish the Academy, don't dabble", "Submit your résumé to the employer coalition", "Join a local chapter to network"]
+  },
+  sources: ["vetsintech.co", "rand.org", "careerrecon.com"]
+},
+
+{
+  id: "cisco-vets",
+  name: "Cisco Veterans Program (Networking Academy)",
+  verified: true,
+  categories: ["it", "education"],
+  url: "https://www.netacad.com/",
+  tagline: "Free Cisco networking & cybersecurity training and certification for the military community.",
+  overview: "Cisco's veteran offerings combine free Cisco Networking Academy courses (networking, cybersecurity, Python, IoT) with the Cisco Veterans Cyber Scholarship (part of the CyberVetsUSA consortium) — providing no-cost training toward Cisco certifications (e.g., CCNA, CyberOps) plus Talent Bridge job-matching for veterans, transitioning members, Guard/Reserve, and military spouses.",
+  mission: "To help the military community build IT skills and launch technology careers.",
+  founded: "Cisco Networking Academy since 1997; CyberVetsUSA consortium launched 2017",
+  hq: "San Jose, CA (Cisco)",
+  funding: "Corporate (Cisco) and consortium partners (AWS, ISC2, Fortinet, Palo Alto Networks, NetApp, NDG).",
+  audience: ["Veterans", "Transitioning service members", "National Guard / Reserve", "Military spouses"],
+  geographic: "Online/nationwide; also delivered on 22+ military installations and via partners (USO, IVMF, NPower).",
+  eligibility: "Open enrollment for self-paced NetAcad courses; the Cyber Scholarship targets veterans, transitioning members (often within 180 days), Guard/Reserve, and military spouses. No strict prerequisites, though foundational IT helps.",
+  status: "active",
+  cost: { tags: ["free", "partially-funded"], detail: "NetAcad military courses and the Veterans Cyber Scholarship are free. A separate Military Credentialing Assistance path can fund Cisco U. subscriptions and exam vouchers via military tuition assistance." },
+  programs: [{
+    name: "NetAcad Courses + Veterans Cyber Scholarship (CyberVetsUSA)",
+    description: "Free self-paced Networking Academy courses plus a scholarship track to a Cisco certification (e.g., CCNA Security or CyberOps), typically 12–14 weeks self-paced, with career resources and Talent Bridge job-matching to 250+ technology employers.",
+    serves: "Career-changers into IT/cyber, from beginners to those formalizing existing skills.",
+    apply: ["Self-enroll in free NetAcad military courses, or", "Apply for the Veterans Cyber Scholarship (often via IVMF Onward to Opportunity)", "Complete the self-paced track and certification exam", "Use Talent Bridge to connect with employers"],
+    timeline: "Self-paced; cyber scholarship ~12–14 weeks.",
+    capacity: "Tens of thousands of military learners; 24,000+ veterans enrolled in a recent year."
+  }],
+  barrier: { level: "Low", reasons: "Free and self-paced with no hard prerequisites, but cybersecurity certs require sustained study; some scholarship tracks have application steps and a prerequisite intro course." },
+  outcomes: { note: "ESTIMATE / org-reported. Cisco cites 73,000+ military personnel trained since 1997 and a large NetAcad alumni base; the verifiable asset is industry certification (e.g., CCNA), with employment via Talent Bridge varying by individual." },
+  roi: { score: 7, salaryImpact: "High", timeReturn: "Medium-High", note: "ESTIMATE. Free training toward a highly marketable Cisco cert (CCNA is a strong résumé signal) is excellent value; ROI hinges on actually finishing the cert and using Talent Bridge." },
+  nobodyTells: [
+    "The free CCNA-track training plus a Cisco cert is one of the best no-cost IT résumé signals available.",
+    "The Cyber Scholarship usually routes through IVMF's Onward to Opportunity — apply there, and expect a short prerequisite intro course.",
+    "If you're still in, Military Credentialing Assistance can fund Cisco U. subscriptions and exam vouchers separately."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — free onramp to IT/networking.",
+    nco: "Strong — formalize tech skills with a cert.",
+    senior_enlisted: "Good — networking/cyber credentialing.",
+    junior_officer: "Good — technical depth for IT roles.",
+    senior_officer: "Mixed — may prefer management; cert still useful."
+  },
+  careers: ["Network Administrator", "Cybersecurity Analyst", "Security Operations", "Systems Administrator", "IT Support"],
+  pathways: ["Service member → free Cisco NetAcad / Cyber Scholarship → CCNA or CyberOps cert → Talent Bridge → IT/cyber role"],
+  community: {
+    praise: ["Free and self-paced", "Globally recognized Cisco certs", "Talent Bridge employer connections"],
+    complaints: ["Cyber certs require real study", "Scholarship has application steps", "Self-discipline needed for self-paced format"],
+    tips: ["Target the CCNA as a résumé anchor", "Apply via IVMF O2O for the scholarship", "Pair NetAcad with hands-on labs"]
+  },
+  sources: ["netacad.com", "blogs.cisco.com", "ivmf.syracuse.edu"]
+},
+
+{
+  id: "milmentor",
+  name: "MilMentor",
+  verified: true,
+  categories: ["leadership"],
+  url: "https://www.milmentor.com/",
+  tagline: "Free, on-demand mentorship — book unlimited 1:1 calls with industry pros.",
+  overview: "MilMentor is a free, on-demand mentorship platform built by an all-veteran and military-spouse team after Veterati shut down. It lets the military community book unlimited one-on-one calls (phone or Zoom) with ~1,000+ mentors — including Fortune 500 recruiters, executives, hiring managers, and successfully transitioned peers — for résumé help, interview prep, referrals, and career advice.",
+  mission: "To make high-quality career mentorship instantly accessible to the military-connected community.",
+  founded: "2024 (launched after Veterati's shutdown)",
+  hq: "U.S. (virtual; veteran- and spouse-led)",
+  funding: "Free platform; mentors volunteer their time.",
+  audience: ["Veterans", "Transitioning service members", "Military spouses", "National Guard / Reserve"],
+  geographic: "Online/nationwide.",
+  eligibility: "Open to anyone military-connected: veterans, active duty, spouses, Guard, and Reserve. No application or waitlist.",
+  status: "active",
+  cost: { tags: ["free"], detail: "100% free, with no premium tiers or upsells. You can book unlimited mentor calls." },
+  programs: [{
+    name: "On-Demand Mentor Matching",
+    description: "Search mentors by company, industry, job title, or keyword; book one-on-one calls on the mentor's open availability. Each call includes an interactive agenda. Users often build a small 'advisory board' by talking to several mentors across fields.",
+    serves: "Anyone wanting fast, specific career guidance or insider referrals during a transition or job search.",
+    apply: ["Create a free profile at milmentor.com", "Browse mentors by company/role/industry", "Request and book a call", "Repeat with as many mentors as you want"],
+    timeline: "Sign up in <5 minutes; calls scheduled on demand.",
+    capacity: "1,000+ mentors; 5,000+ mentees in its first months."
+  }],
+  barrier: { level: "Low", reasons: "No application, waitlist, or cost — the only effort is showing up prepared. Value scales with how proactively you use it." },
+  outcomes: { note: "ESTIMATE / org-reported. Widely described as the leading post-Veterati platform; users report referrals and hires (sometimes at a mentor's own company). Outcomes depend on individual engagement." },
+  roi: { score: 7, salaryImpact: "Medium-High", timeReturn: "High", note: "ESTIMATE. Free, unlimited access to senior professionals and referrals is high-leverage during a job search; pairs well with a structured program or long-term mentor (e.g., ACP)." },
+  nobodyTells: [
+    "Mentors can hand you referrals and insight into roles that aren't posted publicly — that's the real edge, not just advice.",
+    "It's unlimited, so build a small 'board' of 3–5 mentors across your target fields rather than relying on one.",
+    "It's the de facto Veterati successor; many of those mentors migrated here."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — talk to people who made the same jump.",
+    nco: "Strong — translate leadership and get referrals.",
+    senior_enlisted: "Strong — target management roles via insiders.",
+    junior_officer: "Strong — access senior corporate mentors.",
+    senior_officer: "Good — executive-level networking and referrals."
+  },
+  careers: ["Cross-industry — cyber, IT, PM, finance, federal contracting, logistics, and more"],
+  pathways: ["Service member/spouse → MilMentor calls → referrals + insider insight → interviews → hire"],
+  community: {
+    praise: ["Free and unlimited", "Large, current mentor pool", "Fast — no waitlist or application"],
+    complaints: ["You must drive it", "Mentor quality varies", "Newer platform"],
+    tips: ["Come with specific questions", "Book several mentors, not one", "Ask directly about referrals"]
+  },
+  sources: ["milmentor.com", "usveteransmagazine.com"]
+},
+
+{
+  id: "hoh-spouse",
+  name: "Hiring Our Heroes — Military Spouse Programs",
+  verified: true,
+  categories: ["spouse", "transition"],
+  url: "https://www.hiringourheroes.org/military-spouses/",
+  tagline: "Paid spouse fellowships and a hiring network built for PCS-disrupted careers.",
+  overview: "Hiring Our Heroes (a U.S. Chamber of Commerce Foundation program) runs spouse-specific career programs — the Military Spouse Fellowship Program (MSFP), the DoD-sponsored Military Spouse Career Accelerator (MSCAP/Career Accelerator) it facilitates, plus networking (MSPN), AMPLIFY career intensives, and symposia — to combat the high military-spouse unemployment/underemployment rate.",
+  mission: "To connect military spouses with meaningful employment and help employers tap an overlooked talent pool.",
+  founded: "Hiring Our Heroes launched 2011; spouse fellowship since 2015",
+  hq: "Washington, DC (U.S. Chamber of Commerce Foundation)",
+  funding: "Nonprofit; Chamber Foundation, corporate partners, and (for Career Accelerator) DoD funding.",
+  audience: ["Military spouses (active, Guard, Reserve; current and previous)", "Caregivers of wounded/ill/injured veterans"],
+  geographic: "Host cities nationwide and virtual; fellowships placeable anywhere in the U.S. and (for some tracks) abroad.",
+  eligibility: "Career-ready military spouses with an associate degree and/or applicable work experience, able to work in the U.S. Career Accelerator eligibility is determined by DoD via MySECO.",
+  status: "active",
+  cost: { tags: ["free"], detail: "No cost to spouses or employers. Fellowships are paid: MSFP fellows earn an hourly rate (grant-funded); the DoD Career Accelerator is a paid 12-week fellowship." },
+  programs: [{
+    name: "Military Spouse Fellowship Program (MSFP) + Career Accelerator (MSCAP)",
+    description: "MSFP is a paid 6–12 week fellowship matching spouses to host companies with weekly professional-development huddles. The DoD Military Spouse Career Accelerator (facilitated by HOH, applied via MySECO) is a paid 12-week fellowship. Both aim to convert to permanent roles; HOH also runs MSPN networking and AMPLIFY intensives.",
+    serves: "Career-ready spouses needing hands-on experience, networking, and an employer foot-in-the-door.",
+    apply: ["Complete the spouse pre-screening at hiringourheroes.org (MSFP) or apply via MySECO (Career Accelerator)", "Get matched/interview with host companies", "Complete the paid fellowship + weekly huddles", "Interview for a permanent role with the host or network"],
+    timeline: "6–12 weeks depending on program; cohorts run multiple times per year.",
+    capacity: "7,000+ across HOH programs; 1,200+ Career Accelerator fellows placed in its pilot."
+  }],
+  barrier: { level: "Low-Medium", reasons: "Free and paid, but selective — fellowships require an associate degree or relevant experience, an interview/match, and host-company availability that varies by location (more limited overseas)." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "HOH reports ~93% of spouse fellows receive a job offer within 90 days; the DoD Career Accelerator pilot reported an ~86% job-offer rate across 1,200+ fellows."
+  },
+  roi: { score: 8, salaryImpact: "High", timeReturn: "High", note: "ESTIMATE. A paid fellowship with a high offer rate, built specifically around the PCS/employment-gap problem, is excellent ROI for career-ready spouses." },
+  nobodyTells: [
+    "The fellowships are paid, and the offer rates are high — this is a 'try-out' that frequently converts to a job.",
+    "There are two distinct tracks: HOH's own MSFP and the DoD Career Accelerator (apply via MySECO) that HOH helps run.",
+    "It's a different organization from Hire Heroes USA — easy to confuse, but separate programs."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong for their spouses — early-career placement.",
+    nco: "Strong for spouses — paid experience + huddles.",
+    senior_enlisted: "Strong for spouses — management-track roles.",
+    junior_officer: "Strong for spouses — professional placements.",
+    senior_officer: "Strong for spouses — established-career re-entry.",
+    note: "This program serves military spouses, so fit is about the spouse's readiness, not the service member's rank."
+  },
+  careers: ["Cross-industry — PM, operations, HR, finance, tech, and more"],
+  pathways: ["Military spouse → MSFP or DoD Career Accelerator (paid fellowship) → host-company role → portable, durable career"],
+  community: {
+    praise: ["Paid fellowships", "High offer-conversion rate", "Built around the PCS/employment-gap problem"],
+    complaints: ["Requires degree or experience", "Host availability varies by city", "Limited overseas options"],
+    tips: ["Apply to both MSFP and Career Accelerator (MySECO)", "Lean into the weekly huddles", "Target host cities with strong employer rosters"]
+  },
+  sources: ["hiringourheroes.org", "boozallen.com", "militaryonesource.mil"]
+},
+
+{
+  id: "boots-to-books",
+  name: "Boots to Books",
+  verified: true,
+  categories: ["education", "transition"],
+  url: "https://boots2books.com/",
+  tagline: "Free certifications, scholarships, and a transition video course for the military community.",
+  overview: "Boots to Books (boots2books.com) is a national nonprofit (founded 2020 by Army veteran Peter Cline) providing no-cost help with education and employment — professional-certification and higher-education scholarships, a 24+ hour on-demand video transition course taught by recruiters and founders, entrance-exam prep (LSAT/GRE/GMAT/SAT/ACT), mentoring, and hiring events.",
+  mission: "To assist veterans and military families through every facet of their educational and employment transition until hire.",
+  founded: "2020",
+  hq: "U.S. (nonprofit; volunteer-driven)",
+  funding: "Nonprofit; donations and partnerships (e.g., Google, CompTIA) to discount certifications.",
+  audience: ["Veterans", "Transitioning service members", "Military families/spouses", "Guard / Reserve"],
+  geographic: "Nationwide; primarily virtual (video course + online events).",
+  eligibility: "Veterans, transitioning members, and military families; services are free.",
+  status: "active",
+  cost: { tags: ["free"], detail: "All services are free. Scholarships cover certification costs and education expenses (e.g., textbooks, application fees) that exceed VA benefits." },
+  programs: [{
+    name: "Scholarships + Video Course + Hiring Events",
+    description: "Periodic scholarships funding professional certifications (cyber, finance, Lean Six Sigma, etc.) and higher-education costs beyond benefits; a 24+ hour bite-sized video course covering résumés, benefits, and starting a business; entrance-exam prep; mentorship; and monthly networking/hiring events.",
+    serves: "Members who want free upskilling, funding for certs/college gaps, and employer connections.",
+    apply: ["Sign up at boots2books.com", "Access the free video course and events", "Apply for certification/education scholarships as offered", "Attend hiring events to connect with employers"],
+    timeline: "Self-paced course; periodic scholarship and event cycles.",
+    capacity: "2,000+ veterans and spouses served."
+  }],
+  barrier: { level: "Low", reasons: "Free and open, but scholarships are periodic/limited and much of the value is self-driven (you work the course and show up to events)." },
+  outcomes: { note: "ESTIMATE / org-reported. Org reports 2,000+ veterans and spouses served with free training, scholarships, and hiring connections; outcomes are individual." },
+  roi: { score: 6, salaryImpact: "Medium", timeReturn: "High", note: "ESTIMATE. Free certs (e.g., Lean Six Sigma, cyber) plus scholarships that cover the gaps GI Bill won't, at no cost — solid ROI for self-driven users; scholarship availability is the limiting factor." },
+  nobodyTells: [
+    "Name collision: this is the boots2books.com nonprofit (cert/scholarship/career), NOT the California Community Colleges 'Boots to Books' transition college course — different things.",
+    "The scholarships specifically cover the costs GI Bill won't, like certification fees and textbooks beyond your benefit.",
+    "Much of the value is the free 24-hour video course plus periodic hiring events, so engagement matters."
+  ],
+  fitByRank: {
+    junior_enlisted: "Strong — free certs and exam prep.",
+    nco: "Strong — upskilling plus hiring events.",
+    senior_enlisted: "Good — certifications to bridge to civilian roles.",
+    junior_officer: "Good — grad-exam prep and scholarships.",
+    senior_officer: "Mixed — most useful for the cert/scholarship funding."
+  },
+  careers: ["Cybersecurity", "Finance", "Process Improvement (Lean Six Sigma)", "Cross-industry via certifications"],
+  pathways: ["Veteran/spouse → Boots to Books video course + certification scholarship → hiring event → civilian role"],
+  community: {
+    praise: ["Genuinely free certs and scholarships", "Covers gaps GI Bill won't", "Helpful hiring events"],
+    complaints: ["Scholarships are periodic/limited", "Self-driven", "Name confusion with the CA college course"],
+    tips: ["Grab a certification scholarship when offered", "Work the free video course end to end", "Show up to the hiring events"]
+  },
+  sources: ["boots2books.com", "guidestar.org", "lodinews.com"]
+},
+
+{
+  id: "warrior-rising",
+  name: "Warrior Rising",
+  verified: true,
+  categories: ["business"],
+  url: "https://www.warriorrising.org/",
+  tagline: "Free veteran entrepreneurship training, mentorship, and grants — up to $20K+.",
+  overview: "Warrior Rising is a veteran-founded 501(c)(3) nonprofit (2015) that turns veterans and their immediate family members into 'Vetrepreneurs' through a structured pipeline: a free self-paced Warrior Academy (military planning translated into business modeling), an advanced Warrior University accelerator, ongoing mentorship, and grant funding — capped by a Shark Tank-style 'Business Shower' pitch event.",
+  mission: "To empower U.S. military veterans and their immediate family members to build sustainable businesses and achieve financial independence.",
+  founded: "2015",
+  hq: "U.S. (nationwide; virtual delivery)",
+  funding: "501(c)(3) nonprofit; funded in part by an SBA grant agreement plus private donations and partners.",
+  audience: ["Veterans", "Immediate family members of veterans", "Service-disabled veterans (priority track)"],
+  geographic: "Nationwide; fully virtual/self-paced, no geographic restriction.",
+  eligibility: "U.S. military veterans and their immediate family members. Must complete Warrior Academy before advancing to Warrior University or grant eligibility. A dedicated SDVET (Service-Disabled Veteran Entrepreneurs) track exists for service-disabled veterans.",
+  status: "active",
+  cost: { tags: ["free"], detail: "All training (Warrior Academy, Warrior University, SDVET track) is free. Grants are awarded, not loaned — no repayment required." },
+  programs: [{
+    name: "Warrior Academy → Warrior University → Grants/Business Shower",
+    description: "Warrior Academy is a self-paced, ~40-module course translating military planning frameworks (e.g., the five-paragraph order) into a business plan. Graduates can advance to Warrior University, an 8-week virtual accelerator (the 'Veteran Business Accelerator'). Throughout, participants get 1:1 mentorship and weekly coaching calls. The signature 'Business Shower' event supplies a custom suit, laptop, website, headshots, and a pitch-competition shot at grant funding.",
+    serves: "Veterans at any stage: idea on a napkin, buying a franchise/existing business, or accelerating a current business.",
+    apply: ["Register for Warrior Academy at academy.warriorrising.org (rolling enrollment, no deadline)", "Complete the self-paced modules and business plan", "Advance to Warrior University (8-week accelerator)", "Pitch at a Business Shower for grant consideration"],
+    timeline: "Warrior Academy is self-paced; Warrior University runs 8 weeks.",
+    capacity: "36,000+ veterans served since inception; $12M+ total funding distributed ($4M in 2024 alone) and $2.3M+ in direct grants."
+  }],
+  barrier: { level: "Low", reasons: "Free and open to any veteran/family member, but success depends on real engagement — there are no shortcuts or guaranteed grants. Grant funding (not loans) is competitive and tied to completing the training and presenting a clear business plan." },
+  outcomes: {
+    note: "ESTIMATE / org-reported.",
+    orgReported: "Org reports 36,000+ veterans served, $12M+ in funding distributed, $2.3M+ in direct grants, and $10.1M+ in business resources (legal/marketing support) over its first decade."
+  },
+  roi: { score: 7, salaryImpact: "Variable (entrepreneurial)", timeReturn: "Medium", note: "ESTIMATE. Free, well-resourced entrepreneurship pipeline with real grant money on the other end — strong ROI for veterans serious about starting or scaling a business; outcomes naturally vary more than W-2 employment programs." },
+  nobodyTells: [
+    "Grants aren't passive-investment money — they explicitly exclude things like house-flipping or buying/selling securities; you need a real operating business plan.",
+    "You must finish Warrior Academy before you're eligible for Warrior University or grant consideration — there's no skipping the line.",
+    "The 'Business Shower' is a real pitch event (Shark Tank-style) with tangible perks (suit, laptop, website, headshots) even before you compete for funding."
+  ],
+  fitByRank: {
+    junior_enlisted: "Good — early business idea development.",
+    nco: "Strong — leadership translates well to ownership.",
+    senior_enlisted: "Strong — many bring resources to scale faster.",
+    junior_officer: "Strong — planning skills map directly to the curriculum.",
+    senior_officer: "Strong — best resourced to scale post-program."
+  },
+  careers: ["Small business owner", "Franchise owner", "Service-disabled veteran-owned business (SDVOSB)", "Cross-industry entrepreneurship"],
+  pathways: ["Veteran/family member → Warrior Academy → Warrior University → mentorship + Business Shower pitch → grant-funded business launch/scale"],
+  community: {
+    praise: ["Genuinely free, well-funded pipeline", "Real grant money, not just advice", "Strong mentorship and coaching calls"],
+    complaints: ["Grants are competitive, not guaranteed", "Requires real time investment to finish Academy/University", "Best suited to those ready to commit to a business plan"],
+    tips: ["Don't skip modules — the sequence builds your plan", "Bring a real business plan to coaching calls", "If service-disabled, ask about the SDVET track specifically"]
+  },
+  sources: ["warriorrising.org", "news.va.gov", "stories.wf.com", "grantexec.com"]
+},
+
+{
+  id: "outvets",
+  name: "OutVets",
+  verified: true,
+  categories: ["community", "advocacy"],
+  url: "https://www.outvets.org/",
+  tagline: "Community, remembrance, and advocacy for LGBTQ veterans — not a career-placement org.",
+  overview: "OutVets is a Boston-based nonprofit (founded September 2014) that celebrates and honors the service of America's LGBTQ veterans, active-duty members, and their families. It is a social and service-based organization focused on visibility, civic participation, and a living history of LGBTQ military service — most publicly known for marching in (and, in 2017, being briefly barred from) Boston's St. Patrick's Day and Veterans Day parades.",
+  mission: "To promote awareness, civic engagement, and a living history of all LGBTQ veterans.",
+  founded: "September 2014",
+  hq: "Boston, MA",
+  funding: "Nonprofit; community donations and sponsor support.",
+  audience: ["LGBTQ veterans", "LGBTQ active-duty service members", "Their families and allies"],
+  geographic: "Primarily Boston/New England, with broader national visibility through parade participation and media coverage.",
+  eligibility: "Open to LGBTQ veterans, active-duty members, their families, and allies who want to support the mission.",
+  status: "active",
+  cost: { tags: ["free"], detail: "Free to join and participate; the organization runs on donations." },
+  programs: [{
+    name: "Community, Remembrance & Civic Advocacy",
+    description: "OutVets organizes participation in civic events (parades, Veterans Day observances), builds community among LGBTQ veterans and families, and advocates for visibility and equal recognition of LGBTQ military service and history.",
+    serves: "LGBTQ veterans and families seeking community, recognition, and a public voice.",
+    apply: ["Connect via outvets.org or the OutVets Facebook/Meetup community", "Join local meetups and events", "Participate in parade/remembrance events"],
+    timeline: "Ongoing; tied to annual civic calendar (e.g., St. Patrick's Day, Veterans Day).",
+    capacity: "Community-scale; regional New England chapter with national visibility."
+  }],
+  barrier: { level: "Low", reasons: "Open and free to join; this is a community/advocacy organization, not a gated program — there's no application or eligibility screening beyond self-identifying with the mission." },
+  outcomes: { note: "Not applicable — this organization's value is community, visibility, and advocacy rather than employment or career outcomes, so it is intentionally excluded from this portal's career-impact rankings." },
+  roi: null,
+  nobodyTells: [
+    "This is a community and advocacy organization, not a job-placement or career-training program — don't expect résumé help or employer connections here.",
+    "It made national news in 2017 when Boston St. Patrick's Day parade organizers briefly barred it over its rainbow flag/banner, then reversed under public and political pressure.",
+    "If you're looking for LGBTQ-focused career or benefits support specifically, the Modern Military Association of America (MMAA) is the larger national organization to also look into."
+  ],
+  fitByRank: {
+    junior_enlisted: "Open to all — community and visibility focus.",
+    nco: "Open to all — community and visibility focus.",
+    senior_enlisted: "Open to all — community and visibility focus.",
+    junior_officer: "Open to all — community and visibility focus.",
+    senior_officer: "Open to all — community and visibility focus."
+  },
+  careers: [],
+  pathways: ["LGBTQ veteran/family → OutVets community → civic participation, remembrance, and advocacy"],
+  community: {
+    praise: ["Genuine community and visibility for LGBTQ veterans", "Strong civic presence in New England", "Meaningful remembrance and recognition work"],
+    complaints: ["Not a career or benefits program", "Primarily regional (Boston/New England) in direct programming", "Smaller than national LGBTQ veteran orgs"],
+    tips: ["Pair with MMAA if you need career/benefits-specific LGBTQ support", "Best fit if you want community and civic engagement, not job placement"]
+  },
+  sources: ["outvets.org", "bostonglobe.com", "meetup.com"]
+},
+
+/* ==========================================================================
    STUBS — structure present, facts pending next research batch.
    These render in the directory as "Research in progress" so the platform is
    complete-feeling while remaining honest. Append verified data later.
    ========================================================================== */
 
-{ id:"act-now",      name:"ACT Now Education",                 verified:false, categories:["education","it"],          url:"https://www.actnowedu.org/",            status:"active", tagline:"Free certification training and test vouchers.", cost:{tags:["free"]} },
-{ id:"boots-to-books", name:"Boots to Books",                  verified:false, categories:["education"],               url:"",                                       status:"active", tagline:"Transition education course.", cost:{tags:["free"]} },
-{ id:"trio-vub",     name:"Veterans Upward Bound (TRIO/VUB)",  verified:false, categories:["education"],               url:"",                                       status:"active", tagline:"Free college-prep for veterans (TRIO program).", cost:{tags:["free"]} },
 
-{ id:"sitreps2steercos", name:"Sitreps 2 Steercos",           verified:false, categories:["transition"],              url:"",                                       status:"active", tagline:"Transition support program.", cost:{tags:["free"]} },
-{ id:"vts",          name:"Veteran Transition Support (VTS)",  verified:false, categories:["transition"],              url:"",                                       status:"active", tagline:"Transition assistance.", cost:{tags:["free"]} },
-{ id:"7-eagle",      name:"7 Eagle Group",                     verified:false, categories:["transition","remote"],     url:"https://7eagle.com/",                   status:"active", tagline:"Veteran recruiting and placement.", cost:{tags:["free"]} },
-{ id:"invets",       name:"iN Recruit Military (INvets)",      verified:false, categories:["transition"],              url:"",                                       status:"active", tagline:"Veteran recruiting and hiring events.", cost:{tags:["free"]} },
-{ id:"operation-warfighter", name:"Operation Warfighter",      verified:false, categories:["transition"],              url:"",                                       status:"active", tagline:"Federal internship program for wounded/ill/injured service members.", cost:{tags:["free"]} },
-{ id:"e2i",          name:"Education & Employment Initiative (E2I)", verified:false, categories:["transition","education"], url:"", status:"active", tagline:"DoD program connecting wounded warriors to education/employment.", cost:{tags:["free"]} },
-{ id:"recruit-military", name:"RecruitMilitary",               verified:false, categories:["transition"],              url:"https://recruitmilitary.com/",          status:"active", tagline:"Veteran job board and hiring events.", cost:{tags:["free"]} },
 
-{ id:"operation-homefront", name:"Operation Homefront",       verified:false, categories:["health","financial"],      url:"https://www.operationhomefront.org/",   status:"active", tagline:"Financial and family support for military families.", cost:{tags:["free"]} },
-{ id:"my-steady-mind", name:"My Steady Mind",                 verified:false, categories:["health"],                  url:"",                                       status:"active", tagline:"Mental performance and wellness.", cost:{tags:["free"]} },
-{ id:"movement-rx",  name:"Movement Rx",                       verified:false, categories:["health"],                  url:"",                                       status:"active", tagline:"Physical wellness and mobility.", cost:{tags:["self-pay"]} },
 
-{ id:"veterans-in-tech", name:"Veterans in Tech (ViT)",       verified:false, categories:["it","leadership"],         url:"",                                       status:"active", tagline:"Community and training for veterans entering tech.", cost:{tags:["free"]} },
-{ id:"cisco-vets",   name:"Cisco Veterans Program",            verified:false, categories:["it","education"],          url:"https://www.netacad.com/",              status:"active", tagline:"Networking and cybersecurity training (Networking Academy).", cost:{tags:["free","partially-funded"]} },
 { id:"vet-tec-listing", name:"VET TEC (see VET TEC 2.0)",      verified:false, crossref:"vettec2", categories:["it","financial"],          url:"https://www.va.gov/education/other-va-education-benefits/vet-tec-2/", status:"active", tagline:"This is now VET TEC 2.0 — see the full verified profile.", cost:{tags:["gi-bill"]} },
 
-{ id:"map",          name:"Military Apprenticeship Program (MAP)", verified:false, categories:["trades"],              url:"",                                       status:"active", tagline:"Registered apprenticeship pathways.", cost:{tags:["free"]} },
-{ id:"troops-into-transportation", name:"Troops Into Transportation", verified:false, categories:["trades","transition"], url:"", status:"active", tagline:"CDL and transportation careers.", cost:{tags:["free"]} },
-{ id:"umap",         name:"Utility Workers Military Assistance Program (UMAP)", verified:false, categories:["trades"], url:"", status:"active", tagline:"Utility-industry apprenticeships.", cost:{tags:["free"]} },
-{ id:"union-apprenticeships", name:"Union Apprenticeship Programs", verified:false, categories:["trades"],          url:"",                                       status:"active", tagline:"Registered union apprenticeships.", cost:{tags:["free"]} },
-{ id:"nextop",       name:"NextOp Veterans",                   verified:false, categories:["trades","transition"],     url:"https://nextopvets.org/",               status:"active", tagline:"Industry placement for enlisted veterans.", cost:{tags:["free"]} },
-
-{ id:"venture-vets", name:"Venture Vets",                      verified:false, categories:["business"],                url:"",                                       status:"active", tagline:"Entrepreneurship support for veterans.", cost:{tags:["free"]} },
-{ id:"vet-to-drones", name:"Vet to Drones",                    verified:false, categories:["business","trades"],       url:"",                                       status:"active", tagline:"Drone/UAS business and certification training.", cost:{tags:["self-pay"]} },
-
-{ id:"hoh-spouse",   name:"Hiring Our Heroes — Spouse Programs", verified:false, categories:["spouse","transition"],   url:"https://www.hiringourheroes.org/",      status:"active", tagline:"Military Spouse Fellowship and accelerator tracks.", cost:{tags:["free"]} },
-
-{ id:"milmentor",    name:"MilMentor",                         verified:false, categories:["leadership"],              url:"https://www.milmentor.com/",            status:"active", tagline:"Mentor-matching platform for veterans and spouses.", cost:{tags:["free"]} },
-
-{ id:"outvets",      name:"OutVets",                           verified:false, categories:["remote","leadership"],     url:"",                                       status:"active", tagline:"LGBTQ veteran community and advocacy.", cost:{tags:["free"]} },
-{ id:"remote-veterans", name:"Remote Veterans",                verified:false, categories:["remote"],                  url:"",                                       status:"active", tagline:"Remote-work job board for veterans.", cost:{tags:["free"]} },
-{ id:"virtual-vocations", name:"Virtual Vocations",            verified:false, categories:["remote"],                  url:"https://www.virtualvocations.com/",     status:"active", tagline:"Curated remote job listings.", cost:{tags:["free","self-pay"]} },
-{ id:"work-for-warriors", name:"Work for Warriors (WFW)",      verified:false, categories:["remote","transition"],     url:"",                                       status:"active", tagline:"Job placement for Guard/Reserve and veterans.", cost:{tags:["free"]} },
-{ id:"10000-vets",   name:"10,000 Vets",                       verified:false, categories:["remote","transition"],     url:"",                                       status:"active", tagline:"Veteran employment initiative.", cost:{tags:["free"]} },
 
 { id:"vre-reboot",   name:"Veteran Readiness & Employment (VR&E)", verified:false, crossref:"va", categories:["financial","education"], url:"https://www.va.gov/careers-employment/vocational-rehabilitation/", status:"active", tagline:"Chapter 31 — covered inside the verified VA profile.", cost:{tags:["vre","free"]} },
 { id:"gi-bill",      name:"GI Bill",                           verified:false, crossref:"va", categories:["financial","education"],   url:"https://www.va.gov/education/about-gi-bill-benefits/", status:"active", tagline:"Post-9/11 GI Bill — covered inside the verified VA profile.", cost:{tags:["gi-bill"]} }
